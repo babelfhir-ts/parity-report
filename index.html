@@ -1233,6 +1233,16 @@
     </section>
 
     
+    <section>
+      <div class="section-label">
+        Internal (validate + zod)
+        <span class="section-date">Aug 29, 2026, 13:14 GMT+2</span>
+      </div>
+      
+      <p class="muted">No data available yet.</p>
+      
+    </section>
+    
 
     <details class="table-collapse">
     <summary class="table-toggle">⏱ Validation Timing — 3196 resources: validate() 25.25s, Zod 3.7s, HL7 3058.28s, Firely 1111.49s</summary>
@@ -1529,7 +1539,333 @@
     </tr></tbody>
     </table>
   </details>
-    
+    <details class="table-collapse">
+    <summary class="table-toggle">⏱ Generation Timing — 31 packages: 947.1s total</summary>
+    <table>
+      <thead>
+        <tr>
+          <th>Package</th>
+          <th>Extract</th>
+          <th>Init</th>
+          <th>Resolve</th>
+          <th>Generate</th>
+          <th>Compile</th>
+          <th>Repack</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody><tr>
+      <td class="pkg-name">ae-research</td>
+      <td>0.05s</td>
+      <td>5.7s</td>
+      <td>6.8s</td>
+      <td>1.4s</td>
+      <td>2.8s</td>
+      <td>0.09s</td>
+      <td>17.6s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">au-core</td>
+      <td>0.09s</td>
+      <td>4.3s</td>
+      <td>9s</td>
+      <td>0.91s</td>
+      <td>7.5s</td>
+      <td>0.32s</td>
+      <td>23.7s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">carin-bb</td>
+      <td>0.12s</td>
+      <td>4.1s</td>
+      <td>14.1s</td>
+      <td>2s</td>
+      <td>8.8s</td>
+      <td>0.33s</td>
+      <td>30.2s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">ch-core</td>
+      <td>0.14s</td>
+      <td>4.8s</td>
+      <td>5.9s</td>
+      <td>1s</td>
+      <td>9.6s</td>
+      <td>0.44s</td>
+      <td>23.8s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">cpg</td>
+      <td>0.4s</td>
+      <td>5.9s</td>
+      <td>3.2s</td>
+      <td>2s</td>
+      <td>21.3s</td>
+      <td>0.87s</td>
+      <td>35.9s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">cqfmeasures</td>
+      <td>0.13s</td>
+      <td>4.9s</td>
+      <td>6.2s</td>
+      <td>1s</td>
+      <td>4.8s</td>
+      <td>0.3s</td>
+      <td>17.7s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">davinci-alerts</td>
+      <td>0.05s</td>
+      <td>4.2s</td>
+      <td>16.2s</td>
+      <td>0.78s</td>
+      <td>3.9s</td>
+      <td>0.18s</td>
+      <td>26.2s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">davinci-cdex</td>
+      <td>0.08s</td>
+      <td>5.3s</td>
+      <td>34.7s</td>
+      <td>1s</td>
+      <td>4.3s</td>
+      <td>0.22s</td>
+      <td>46.3s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">davinci-deqm</td>
+      <td>0.13s</td>
+      <td>3.9s</td>
+      <td>19.4s</td>
+      <td>0.76s</td>
+      <td>5.2s</td>
+      <td>0.28s</td>
+      <td>30.5s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">davinci-drug-formulary</td>
+      <td>0.08s</td>
+      <td>4.7s</td>
+      <td>14.3s</td>
+      <td>1.7s</td>
+      <td>3.4s</td>
+      <td>0.23s</td>
+      <td>25.6s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">davinci-dtr</td>
+      <td>0.07s</td>
+      <td>3.9s</td>
+      <td>41.1s</td>
+      <td>1.2s</td>
+      <td>5.9s</td>
+      <td>0.24s</td>
+      <td>52.9s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">davinci-pas</td>
+      <td>0.13s</td>
+      <td>5.2s</td>
+      <td>42.6s</td>
+      <td>4.6s</td>
+      <td>9.9s</td>
+      <td>0.38s</td>
+      <td>64.4s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">davinci-pdex</td>
+      <td>0.1s</td>
+      <td>3.9s</td>
+      <td>46.6s</td>
+      <td>0.91s</td>
+      <td>7s</td>
+      <td>0.32s</td>
+      <td>59.7s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">de-basisprofil</td>
+      <td>0.12s</td>
+      <td>9.4s</td>
+      <td>0.82s</td>
+      <td>0.87s</td>
+      <td>9.3s</td>
+      <td>0.39s</td>
+      <td>22.7s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">emedicinal-product</td>
+      <td>0.06s</td>
+      <td>5s</td>
+      <td>2.8s</td>
+      <td>3.8s</td>
+      <td>4.2s</td>
+      <td>0.14s</td>
+      <td>18.6s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">genomics-reporting</td>
+      <td>0.16s</td>
+      <td>3.7s</td>
+      <td>2.3s</td>
+      <td>0.47s</td>
+      <td>6.8s</td>
+      <td>0.32s</td>
+      <td>15.3s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">ips</td>
+      <td>0.09s</td>
+      <td>4.4s</td>
+      <td>5.9s</td>
+      <td>1.5s</td>
+      <td>5.8s</td>
+      <td>0.25s</td>
+      <td>21.4s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">isik-basis</td>
+      <td>0.06s</td>
+      <td>3.9s</td>
+      <td>3.2s</td>
+      <td>0.36s</td>
+      <td>5.3s</td>
+      <td>0.19s</td>
+      <td>13.8s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">isik-medikation</td>
+      <td>0.04s</td>
+      <td>4.2s</td>
+      <td>3.9s</td>
+      <td>74.9s</td>
+      <td>3.4s</td>
+      <td>0.15s</td>
+      <td>87.2s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">kbv-erp</td>
+      <td>0.03s</td>
+      <td>4.3s</td>
+      <td>6.2s</td>
+      <td>0.48s</td>
+      <td>4.8s</td>
+      <td>0.18s</td>
+      <td>16.2s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">mcode</td>
+      <td>0.19s</td>
+      <td>4.2s</td>
+      <td>11.3s</td>
+      <td>2.6s</td>
+      <td>9.9s</td>
+      <td>0.46s</td>
+      <td>30.4s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">mhd</td>
+      <td>0.14s</td>
+      <td>4.3s</td>
+      <td>5.1s</td>
+      <td>0.65s</td>
+      <td>7.3s</td>
+      <td>0.34s</td>
+      <td>18.3s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">ndh</td>
+      <td>0.18s</td>
+      <td>4.5s</td>
+      <td>11s</td>
+      <td>1.9s</td>
+      <td>7.1s</td>
+      <td>0.41s</td>
+      <td>25.5s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">physical-activity</td>
+      <td>0.14s</td>
+      <td>3.9s</td>
+      <td>16.7s</td>
+      <td>0.97s</td>
+      <td>6.3s</td>
+      <td>0.28s</td>
+      <td>29.2s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">pixm</td>
+      <td>0.05s</td>
+      <td>5.3s</td>
+      <td>4.1s</td>
+      <td>0.7s</td>
+      <td>4.3s</td>
+      <td>0.17s</td>
+      <td>15s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">qicore</td>
+      <td>0.14s</td>
+      <td>4.7s</td>
+      <td>10.4s</td>
+      <td>12.4s</td>
+      <td>12.6s</td>
+      <td>0.53s</td>
+      <td>45.8s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">sdc</td>
+      <td>0.13s</td>
+      <td>3.3s</td>
+      <td>7.7s</td>
+      <td>1.6s</td>
+      <td>8.7s</td>
+      <td>0.39s</td>
+      <td>22.8s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">sdoh</td>
+      <td>0.11s</td>
+      <td>5.4s</td>
+      <td>22.5s</td>
+      <td>3.9s</td>
+      <td>7.2s</td>
+      <td>0.32s</td>
+      <td>41.1s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">smart</td>
+      <td>0.03s</td>
+      <td>3.7s</td>
+      <td>5.6s</td>
+      <td>0.08s</td>
+      <td>2.3s</td>
+      <td>0.1s</td>
+      <td>12.1s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">us-core</td>
+      <td>0.3s</td>
+      <td>4.6s</td>
+      <td>19s</td>
+      <td>1.6s</td>
+      <td>14.8s</td>
+      <td>0.71s</td>
+      <td>45.5s</td>
+    </tr>
+<tr>
+      <td class="pkg-name">vitals</td>
+      <td>0.07s</td>
+      <td>4.1s</td>
+      <td>1.5s</td>
+      <td>0.64s</td>
+      <td>4.8s</td>
+      <td>0.2s</td>
+      <td>11.7s</td>
+    </tr></tbody>
+    </table>
+  </details>
     <details class="matrix-section">
     <summary class="matrix-toggle">⚠️ Excluded Profiles — 61 exclusions
       <span class="matrix-chips-inline">
