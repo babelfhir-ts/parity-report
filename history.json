@@ -579,10 +579,10 @@
       }
     },
     {
-      "date": "2026-08-29T11:17:03.812Z",
+      "date": "2026-09-04T20:37:53.202Z",
       "version": "1.6.12",
       "packageCount": 31,
-      "hl7Version": "6.10.3",
+      "hl7Version": "6.10.4",
       "firelyVersion": "3.3.1",
       "firely": {
         "empty": 100,

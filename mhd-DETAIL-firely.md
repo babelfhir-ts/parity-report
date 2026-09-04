@@ -1,5 +1,5 @@
 # mhd - Detailed Report (FHIR all)
-Generated: 2026-08-29T11:15:29.860Z
+Generated: 2026-09-04T19:53:14.063Z
 
 Package: `ihe.iti.mhd@4.2.4`
 FHIR Release: all

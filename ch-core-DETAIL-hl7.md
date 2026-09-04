@@ -1,5 +1,5 @@
 # ch-core - Detailed Report (FHIR all)
-Generated: 2026-08-29T11:16:04.196Z
+Generated: 2026-09-04T19:56:06.790Z
 
 Package: `ch.fhir.ig.ch-core@6.0.0`
 FHIR Release: all

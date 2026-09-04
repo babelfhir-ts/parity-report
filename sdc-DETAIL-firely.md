@@ -1,5 +1,5 @@
 # sdc - Detailed Report (FHIR all)
-Generated: 2026-08-29T11:15:19.699Z
+Generated: 2026-09-04T19:51:50.288Z
 
 Package: `hl7.fhir.uv.sdc@4.0.0`
 FHIR Release: all

@@ -1,5 +1,5 @@
 # davinci-pas - Detailed Report (FHIR all)
-Generated: 2026-08-29T11:19:27.696Z
+Generated: 2026-09-04T20:03:46.521Z
 
 Package: `hl7.fhir.us.davinci-pas@2.2.1`
 FHIR Release: all

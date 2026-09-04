@@ -1,5 +1,5 @@
 # davinci-drug-formulary - Detailed Report (FHIR all)
-Generated: 2026-08-29T11:16:22.016Z
+Generated: 2026-09-04T19:59:25.537Z
 
 Package: `hl7.fhir.us.davinci-drug-formulary@2.1.0`
 FHIR Release: all

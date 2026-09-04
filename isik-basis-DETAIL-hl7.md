@@ -1,5 +1,5 @@
 # isik-basis - Detailed Report (FHIR all)
-Generated: 2026-08-29T11:15:18.060Z
+Generated: 2026-09-04T20:00:02.663Z
 
 Package: `de.gematik.isik-basismodul@4.0.3`
 FHIR Release: all
@@ -9,7 +9,7 @@ FHIR Release: all
 | Metric | Passed | Total | Rate |
 |--------|--------|-------|------|
 | Empty Validation Parity | 25 | 25 | 100% |
-| Random Validation Parity | 23 | 25 | 92% |
+| Random Validation Parity | 25 | 25 | 100% |
 | Random Generation Validation + Parity | 23 | 25 | 92% |
 
 
@@ -51,10 +51,11 @@ _None_
 
 ## Random Validation Parity Results
 
-### ✅ Passing (23)
+### ✅ Passing (25)
 - ✅ ISiKAbrechnungsfallClass
 - ✅ ISiKAlkoholAbususClass
 - ✅ ISiKAllergieUnvertraeglichkeitClass
+- ✅ ISiKAngehoerigerClass
 - ✅ ISiKBerichtBundleClass
 - ✅ ISiKBerichtSubSystemeClass
 - ✅ ISiKBinaryClass
@@ -66,6 +67,7 @@ _None_
 - ✅ ISiKPatientClass
 - ✅ ISiKPatientMergeSubscriptionClass
 - ✅ ISiKPersonImGesundheitsberufClass
+- ✅ ISiKProzedurClass
 - ✅ ISiKRaucherStatusClass
 - ✅ ISiKSchwangerschaftErwarteterEntbindungsterminClass
 - ✅ ISiKSchwangerschaftsstatusClass
@@ -76,17 +78,8 @@ _None_
 - ✅ ISiKValueSetClass
 - ✅ PatientMergeSubscriptionClass
 
-### ❌ Failing (2)
-- ❌ ISiKAngehoerigerClass
-  - Field-level comparison:
-  Both validators: none
-  Only HL7: constraint
-
-- ❌ ISiKProzedurClass
-  - Field-level comparison:
-  Both validators: none
-  Only HL7: unclassified
-
+### ❌ Failing (0)
+_None_
 
 ---
 

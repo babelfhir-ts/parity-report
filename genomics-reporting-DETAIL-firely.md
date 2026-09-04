@@ -1,5 +1,5 @@
 # genomics-reporting - Detailed Report (FHIR all)
-Generated: 2026-08-29T11:15:14.159Z
+Generated: 2026-09-04T19:53:08.910Z
 
 Package: `hl7.fhir.uv.genomics-reporting@3.0.0`
 FHIR Release: all

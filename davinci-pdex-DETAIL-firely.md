@@ -1,5 +1,5 @@
 # davinci-pdex - Detailed Report (FHIR all)
-Generated: 2026-08-29T11:15:11.649Z
+Generated: 2026-09-04T19:54:52.841Z
 
 Package: `hl7.fhir.us.davinci-pdex@2.1.0`
 FHIR Release: all

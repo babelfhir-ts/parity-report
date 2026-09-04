@@ -1,9 +1,9 @@
 {
-  "generated": "2026-08-29T11:20:51.186Z",
+  "generated": "2026-09-04T20:38:06.946Z",
   "babelfhirVersion": "1.6.12",
   "fhirRelease": "R4",
   "validator": "HL7 Java Validator",
-  "validatorVersion": "6.10.3",
+  "validatorVersion": "6.10.4",
   "reportUrl": "https://max-health-inc.github.io/BabelFHIR-TS",
   "excludedProfiles": 12,
   "excludedDetails": [
@@ -238,6 +238,24 @@
       "reason": "HL7 reports one fixed-value violation twice, anchored to both profiles that pin the unit; we report it once"
     },
     {
+      "pkg": "isik-basis",
+      "profile": "ISiKAngehoerigerClass",
+      "validator": "hl7",
+      "fields": "constraint",
+      "category": "Discriminator evaluation failure",
+      "scope": "random-parity",
+      "reason": "RelatedPerson.name:Name declares a pattern discriminator and sets no pattern[x], so slice membership cannot be decided"
+    },
+    {
+      "pkg": "isik-basis",
+      "profile": "ISiKProzedurClass",
+      "validator": "hl7",
+      "fields": "unclassified",
+      "category": "Terminology server limitation",
+      "scope": "random-parity",
+      "reason": "tx: OPS code system version in the ValueSet include (\"*\") does not match the version on the code, which tracks the current OPS year"
+    },
+    {
       "pkg": "mhd",
       "profile": "ProvideDocumentBundleResponseClass",
       "validator": "hl7",
@@ -316,319 +334,319 @@
   },
   "timing": {
     "totalResources": 3196,
-    "totalS": 25.25,
-    "totalZodS": 3.7,
-    "totalExtS": 3058.28,
+    "totalS": 26.49,
+    "totalZodS": 4.11,
+    "totalExtS": 4739.05,
     "packages": [
       {
         "name": "ae-research",
         "resources": 10,
-        "totalS": 0.11,
-        "avgMs": 10.8,
-        "zodTotalS": 0.02,
-        "zodAvgMs": 1.9,
-        "extTotalS": 32.6,
-        "extAvgMs": 16300.5
+        "totalS": 0.13,
+        "avgMs": 12.9,
+        "zodTotalS": 0.03,
+        "zodAvgMs": 2.7,
+        "extTotalS": 57.6,
+        "extAvgMs": 28799
       },
       {
         "name": "au-core",
         "resources": 120,
-        "totalS": 0.88,
-        "avgMs": 7.3,
-        "zodTotalS": 0.13,
-        "zodAvgMs": 1.1,
-        "extTotalS": 75.43,
-        "extAvgMs": 1508.6
+        "totalS": 1.04,
+        "avgMs": 8.6,
+        "zodTotalS": 0.16,
+        "zodAvgMs": 1.3,
+        "extTotalS": 96.87,
+        "extAvgMs": 1937.4
       },
       {
         "name": "carin-bb",
         "resources": 44,
-        "totalS": 1.29,
-        "avgMs": 29.3,
-        "zodTotalS": 0.14,
-        "zodAvgMs": 3.1,
-        "extTotalS": 70.82,
-        "extAvgMs": 2213
+        "totalS": 0.87,
+        "avgMs": 19.7,
+        "zodTotalS": 0.12,
+        "zodAvgMs": 2.6,
+        "extTotalS": 150.69,
+        "extAvgMs": 4708.9
       },
       {
         "name": "ch-core",
         "resources": 176,
-        "totalS": 1.01,
-        "avgMs": 5.7,
+        "totalS": 1.26,
+        "avgMs": 7.2,
         "zodTotalS": 0.18,
         "zodAvgMs": 1,
-        "extTotalS": 82.96,
-        "extAvgMs": 1430.4
+        "extTotalS": 126.73,
+        "extAvgMs": 2185
       },
       {
         "name": "cpg",
         "resources": 264,
-        "totalS": 1.1,
-        "avgMs": 4.2,
-        "zodTotalS": 0.47,
-        "zodAvgMs": 1.8,
-        "extTotalS": 159.78,
-        "extAvgMs": 807
+        "totalS": 0.76,
+        "avgMs": 2.9,
+        "zodTotalS": 0.32,
+        "zodAvgMs": 1.2,
+        "extTotalS": 229.88,
+        "extAvgMs": 1161
       },
       {
         "name": "cqfmeasures",
         "resources": 88,
-        "totalS": 0.47,
-        "avgMs": 5.3,
-        "zodTotalS": 0.09,
-        "zodAvgMs": 1,
-        "extTotalS": 50.74,
-        "extAvgMs": 1951.6
+        "totalS": 0.6,
+        "avgMs": 6.8,
+        "zodTotalS": 0.14,
+        "zodAvgMs": 1.6,
+        "extTotalS": 80.06,
+        "extAvgMs": 3079.2
       },
       {
         "name": "davinci-alerts",
         "resources": 20,
-        "totalS": 0.17,
-        "avgMs": 8.7,
+        "totalS": 0.21,
+        "avgMs": 10.3,
         "zodTotalS": 0.04,
-        "zodAvgMs": 1.9,
-        "extTotalS": 80.73,
-        "extAvgMs": 5045.6
+        "zodAvgMs": 2.1,
+        "extTotalS": 144.21,
+        "extAvgMs": 9013
       },
       {
         "name": "davinci-cdex",
         "resources": 30,
-        "totalS": 0.19,
-        "avgMs": 6.4,
-        "zodTotalS": 0.06,
-        "zodAvgMs": 2.1,
-        "extTotalS": 163.35,
-        "extAvgMs": 11668.1
+        "totalS": 0.27,
+        "avgMs": 9,
+        "zodTotalS": 0.09,
+        "zodAvgMs": 2.9,
+        "extTotalS": 147.51,
+        "extAvgMs": 10536.4
       },
       {
         "name": "davinci-deqm",
         "resources": 68,
-        "totalS": 0.41,
-        "avgMs": 6,
-        "zodTotalS": 0.08,
-        "zodAvgMs": 1.1,
-        "extTotalS": 90.85,
-        "extAvgMs": 4129.7
+        "totalS": 0.36,
+        "avgMs": 5.3,
+        "zodTotalS": 0.05,
+        "zodAvgMs": 0.8,
+        "extTotalS": 146.57,
+        "extAvgMs": 6662.1
       },
       {
         "name": "davinci-drug-formulary",
         "resources": 42,
-        "totalS": 0.62,
-        "avgMs": 14.8,
-        "zodTotalS": 0.05,
-        "zodAvgMs": 1.1,
-        "extTotalS": 101.67,
-        "extAvgMs": 6354.4
+        "totalS": 0.71,
+        "avgMs": 16.9,
+        "zodTotalS": 0.08,
+        "zodAvgMs": 1.9,
+        "extTotalS": 152.94,
+        "extAvgMs": 9558.9
       },
       {
         "name": "davinci-dtr",
         "resources": 192,
-        "totalS": 1.81,
-        "avgMs": 9.5,
-        "zodTotalS": 0.1,
-        "zodAvgMs": 0.5,
-        "extTotalS": 206.11,
-        "extAvgMs": 7361
+        "totalS": 1.54,
+        "avgMs": 8,
+        "zodTotalS": 0.15,
+        "zodAvgMs": 0.8,
+        "extTotalS": 451.23,
+        "extAvgMs": 16115.5
       },
       {
         "name": "davinci-pas",
         "resources": 194,
-        "totalS": 2.3,
-        "avgMs": 11.8,
-        "zodTotalS": 0.18,
-        "zodAvgMs": 0.9,
-        "extTotalS": 287.31,
-        "extAvgMs": 4953.6
+        "totalS": 1.89,
+        "avgMs": 9.7,
+        "zodTotalS": 0.22,
+        "zodAvgMs": 1.1,
+        "extTotalS": 445.32,
+        "extAvgMs": 7677.9
       },
       {
         "name": "davinci-pdex",
         "resources": 118,
-        "totalS": 0.34,
-        "avgMs": 2.9,
-        "zodTotalS": 0.08,
-        "zodAvgMs": 0.7,
-        "extTotalS": 282.02,
-        "extAvgMs": 10847.1
+        "totalS": 0.44,
+        "avgMs": 3.7,
+        "zodTotalS": 0.1,
+        "zodAvgMs": 0.8,
+        "extTotalS": 297.77,
+        "extAvgMs": 11452.8
       },
       {
         "name": "de-basisprofil",
         "resources": 170,
-        "totalS": 0.94,
-        "avgMs": 5.6,
+        "totalS": 0.91,
+        "avgMs": 5.3,
         "zodTotalS": 0.18,
         "zodAvgMs": 1.1,
-        "extTotalS": 41.88,
-        "extAvgMs": 1102
+        "extTotalS": 62.49,
+        "extAvgMs": 1644.4
       },
       {
         "name": "emedicinal-product",
         "resources": 30,
-        "totalS": 0.19,
-        "avgMs": 6.2,
-        "zodTotalS": 0.06,
-        "zodAvgMs": 1.9,
-        "extTotalS": 28.17,
-        "extAvgMs": 939.1
+        "totalS": 0.18,
+        "avgMs": 6,
+        "zodTotalS": 0.05,
+        "zodAvgMs": 1.7,
+        "extTotalS": 53.85,
+        "extAvgMs": 1794.9
       },
       {
         "name": "genomics-reporting",
         "resources": 96,
-        "totalS": 0.32,
-        "avgMs": 3.3,
-        "zodTotalS": 0.1,
-        "zodAvgMs": 1,
-        "extTotalS": 61.03,
-        "extAvgMs": 1794.9
+        "totalS": 0.44,
+        "avgMs": 4.6,
+        "zodTotalS": 0.14,
+        "zodAvgMs": 1.4,
+        "extTotalS": 110.7,
+        "extAvgMs": 3255.8
       },
       {
         "name": "ips",
         "resources": 76,
-        "totalS": 0.24,
-        "avgMs": 3.2,
-        "zodTotalS": 0.08,
-        "zodAvgMs": 1.1,
-        "extTotalS": 50.49,
-        "extAvgMs": 935.1
+        "totalS": 0.44,
+        "avgMs": 5.8,
+        "zodTotalS": 0.16,
+        "zodAvgMs": 2.1,
+        "extTotalS": 59.75,
+        "extAvgMs": 1106.5
       },
       {
         "name": "isik-basis",
         "resources": 126,
-        "totalS": 1.54,
-        "avgMs": 12.3,
-        "zodTotalS": 0.11,
-        "zodAvgMs": 0.8,
-        "extTotalS": 39.24,
-        "extAvgMs": 700.7
+        "totalS": 2.5,
+        "avgMs": 19.8,
+        "zodTotalS": 0.14,
+        "zodAvgMs": 1.1,
+        "extTotalS": 70.91,
+        "extAvgMs": 1266.2
       },
       {
         "name": "isik-medikation",
         "resources": 32,
-        "totalS": 1.11,
-        "avgMs": 34.8,
-        "zodTotalS": 0.03,
-        "zodAvgMs": 1.1,
-        "extTotalS": 44.65,
-        "extAvgMs": 2790.4
+        "totalS": 1.92,
+        "avgMs": 59.9,
+        "zodTotalS": 0.04,
+        "zodAvgMs": 1.4,
+        "extTotalS": 68.52,
+        "extAvgMs": 4282.6
       },
       {
         "name": "kbv-erp",
         "resources": 64,
-        "totalS": 1.14,
-        "avgMs": 17.7,
-        "zodTotalS": 0.07,
-        "zodAvgMs": 1.1,
-        "extTotalS": 38.85,
-        "extAvgMs": 2428
+        "totalS": 1.31,
+        "avgMs": 20.5,
+        "zodTotalS": 0.08,
+        "zodAvgMs": 1.3,
+        "extTotalS": 56.8,
+        "extAvgMs": 3549.9
       },
       {
         "name": "mcode",
         "resources": 142,
-        "totalS": 0.72,
-        "avgMs": 5.1,
-        "zodTotalS": 0.17,
+        "totalS": 0.76,
+        "avgMs": 5.4,
+        "zodTotalS": 0.18,
         "zodAvgMs": 1.2,
-        "extTotalS": 94.67,
-        "extAvgMs": 1245.7
+        "extTotalS": 160.87,
+        "extAvgMs": 2116.6
       },
       {
         "name": "mhd",
         "resources": 78,
-        "totalS": 0.7,
-        "avgMs": 9,
-        "zodTotalS": 0.13,
-        "zodAvgMs": 1.7,
-        "extTotalS": 139.5,
-        "extAvgMs": 2250
+        "totalS": 0.97,
+        "avgMs": 12.5,
+        "zodTotalS": 0.17,
+        "zodAvgMs": 2.2,
+        "extTotalS": 218.25,
+        "extAvgMs": 3520.2
       },
       {
         "name": "ndh",
         "resources": 176,
-        "totalS": 0.53,
-        "avgMs": 3,
-        "zodTotalS": 0.13,
-        "zodAvgMs": 0.8,
-        "extTotalS": 102.95,
-        "extAvgMs": 1660.5
+        "totalS": 0.83,
+        "avgMs": 4.7,
+        "zodTotalS": 0.18,
+        "zodAvgMs": 1,
+        "extTotalS": 188.85,
+        "extAvgMs": 3046
       },
       {
         "name": "physical-activity",
         "resources": 38,
-        "totalS": 0.66,
-        "avgMs": 17.5,
-        "zodTotalS": 0.09,
-        "zodAvgMs": 2.4,
-        "extTotalS": 60.08,
-        "extAvgMs": 1877.3
+        "totalS": 0.56,
+        "avgMs": 14.8,
+        "zodTotalS": 0.11,
+        "zodAvgMs": 2.8,
+        "extTotalS": 89.73,
+        "extAvgMs": 2804
       },
       {
         "name": "pixm",
         "resources": 30,
-        "totalS": 0.19,
-        "avgMs": 6.4,
-        "zodTotalS": 0.06,
-        "zodAvgMs": 2,
-        "extTotalS": 60.03,
-        "extAvgMs": 2728.5
+        "totalS": 0.26,
+        "avgMs": 8.5,
+        "zodTotalS": 0.08,
+        "zodAvgMs": 2.6,
+        "extTotalS": 75.72,
+        "extAvgMs": 3441.6
       },
       {
         "name": "qicore",
         "resources": 172,
-        "totalS": 0.87,
-        "avgMs": 5,
-        "zodTotalS": 0.25,
-        "zodAvgMs": 1.5,
-        "extTotalS": 167.74,
-        "extAvgMs": 1290.3
+        "totalS": 1.22,
+        "avgMs": 7.1,
+        "zodTotalS": 0.28,
+        "zodAvgMs": 1.6,
+        "extTotalS": 295.97,
+        "extAvgMs": 2276.7
       },
       {
         "name": "sdc",
         "resources": 320,
-        "totalS": 2.35,
-        "avgMs": 7.4,
-        "zodTotalS": 0.16,
-        "zodAvgMs": 0.5,
-        "extTotalS": 109.53,
-        "extAvgMs": 1610.8
+        "totalS": 1.85,
+        "avgMs": 5.8,
+        "zodTotalS": 0.19,
+        "zodAvgMs": 0.6,
+        "extTotalS": 177.5,
+        "extAvgMs": 2610.3
       },
       {
         "name": "sdoh",
         "resources": 50,
-        "totalS": 0.88,
-        "avgMs": 17.6,
-        "zodTotalS": 0.12,
-        "zodAvgMs": 2.4,
-        "extTotalS": 89.48,
-        "extAvgMs": 2237.1
+        "totalS": 0.64,
+        "avgMs": 12.8,
+        "zodTotalS": 0.13,
+        "zodAvgMs": 2.6,
+        "extTotalS": 146.97,
+        "extAvgMs": 3674.2
       },
       {
         "name": "smart",
         "resources": 18,
-        "totalS": 0.74,
-        "avgMs": 41,
-        "zodTotalS": 0.03,
-        "zodAvgMs": 1.4,
-        "extTotalS": 44.72,
-        "extAvgMs": 3726.3
+        "totalS": 0.33,
+        "avgMs": 18.4,
+        "zodTotalS": 0.05,
+        "zodAvgMs": 2.6,
+        "extTotalS": 58.46,
+        "extAvgMs": 4871.7
       },
       {
         "name": "us-core",
         "resources": 164,
-        "totalS": 1.2,
-        "avgMs": 7.3,
-        "zodTotalS": 0.24,
-        "zodAvgMs": 1.4,
-        "extTotalS": 161.09,
-        "extAvgMs": 1464.5
+        "totalS": 1,
+        "avgMs": 6.1,
+        "zodTotalS": 0.19,
+        "zodAvgMs": 1.2,
+        "extTotalS": 249.65,
+        "extAvgMs": 2269.5
       },
       {
         "name": "vitals",
         "resources": 48,
-        "totalS": 0.23,
-        "avgMs": 4.9,
-        "zodTotalS": 0.07,
-        "zodAvgMs": 1.5,
-        "extTotalS": 39.81,
-        "extAvgMs": 1326.9
+        "totalS": 0.29,
+        "avgMs": 6.1,
+        "zodTotalS": 0.08,
+        "zodAvgMs": 1.7,
+        "extTotalS": 66.68,
+        "extAvgMs": 2222.6
       }
     ]
   },
@@ -1072,9 +1090,9 @@
           "pct": 100
         },
         "random": {
-          "passed": 23,
+          "passed": 25,
           "total": 25,
-          "pct": 92
+          "pct": 100
         },
         "validation": {
           "passed": 23,
@@ -1082,7 +1100,7 @@
           "pct": 92
         }
       },
-      "overallPct": 95
+      "overallPct": 97
     },
     {
       "key": "isik-medikation",

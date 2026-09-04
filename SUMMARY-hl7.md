@@ -1,5 +1,5 @@
 # Pipeline Parity Summary (FHIR all)
-Generated: 2026-08-29T11:20:51.186Z
+Generated: 2026-09-04T20:38:06.946Z
 
 ## Packages Tested
 - ae-research: hl7.fhir.uv.ae-research-ig@1.0.1
@@ -56,7 +56,7 @@ Generated: 2026-08-29T11:20:51.186Z
 | [emedicinal-product](./emedicinal-product-DETAIL-hl7.md) | 15/15 (100%) | 15/15 (100%) | 11/15 (73%) |
 | [genomics-reporting](./genomics-reporting-DETAIL-hl7.md) | 17/17 (100%) | 17/17 (100%) | 16/17 (94%) |
 | [ips](./ips-DETAIL-hl7.md) | 27/27 (100%) | 27/27 (100%) | 27/27 (100%) |
-| [isik-basis](./isik-basis-DETAIL-hl7.md) | 25/25 (100%) | 23/25 (92%) | 23/25 (92%) |
+| [isik-basis](./isik-basis-DETAIL-hl7.md) | 25/25 (100%) | 25/25 (100%) | 23/25 (92%) |
 | [isik-medikation](./isik-medikation-DETAIL-hl7.md) | 8/8 (100%) | 8/8 (100%) | 8/8 (100%) |
 | [kbv-erp](./kbv-erp-DETAIL-hl7.md) | 7/7 (100%) | 6/7 (86%) | 0/7 (0%) |
 | [mcode](./mcode-DETAIL-hl7.md) | 37/37 (100%) | 38/38 (100%) | 31/38 (82%) |
@@ -78,7 +78,7 @@ Generated: 2026-08-29T11:20:51.186Z
 | Metric | Passed | Total | Rate |
 |--------|--------|-------|------|
 | Empty Validation Parity | 657 | 657 | 100% |
-| Random Validation Parity | 702 | 705 | 100% |
+| Random Validation Parity | 704 | 705 | 100% |
 | Random Generation Validation + Parity | 536 | 705 | 76% |
 
 ### Metric Definitions
@@ -104,7 +104,7 @@ Generated: 2026-08-29T11:20:51.186Z
 | us-core | USCoreVitalSignsProfileClass | hl7 | Cross-profile validation | empty-parity, random-parity, random-validation | HL7 bp|4.0.1 cross-validation on vital-signs Observation | Curated (hl7 6.9.4) |
 
 
-## ⚠️ Excluded Fields (20)
+## ⚠️ Excluded Fields (22)
 
 These specific fields are excluded from parity comparison because validators report them incorrectly. The profile still passes, but these fields are tolerated.
 
@@ -122,6 +122,8 @@ These specific fields are excluded from parity comparison because validators rep
 | de-basisprofil | VitalSignDEHerzfrequenzClass | hl7 | pattern | Validation model difference | random-parity | HL7 reports one fixed-value violation twice, anchored to both profiles that pin the unit; we report it once |
 | de-basisprofil | VitalSignDEKoerperkerntemperaturClass | hl7 | pattern | Validation model difference | random-parity | HL7 reports one fixed-value violation twice, anchored to both profiles that pin the unit; we report it once |
 | de-basisprofil | VitalSignDEArterielleSauerstoffsaettigungClass | hl7 | pattern | Validation model difference | random-parity | HL7 reports one fixed-value violation twice, anchored to both profiles that pin the unit; we report it once |
+| isik-basis | ISiKAngehoerigerClass | hl7 | constraint | Discriminator evaluation failure | random-parity | RelatedPerson.name:Name declares a pattern discriminator and sets no pattern[x], so slice membership cannot be decided |
+| isik-basis | ISiKProzedurClass | hl7 | unclassified | Terminology server limitation | random-parity | tx: OPS code system version in the ValueSet include ("*") does not match the version on the code, which tracks the current OPS year |
 | mhd | ProvideDocumentBundleResponseClass | hl7 | unclassified | Bundled context required | random-parity | bdl-8 FHIRPath empty propagation: fullUrl.contains(/_history/).not() yields empty when fullUrl absent; fhirpath.js all() returns false, HL7 returns true |
 | mhd | ComprehensiveProvideDocumentBundleClass | hl7 | constraint, entry, pattern | Validation model difference | random-parity | Bundle entry slice validation model difference: our validator matches entries by resourceType and delegates to sub-profile validators (catching code+extension errors), while HL7 uses conformsTo-based matching and reports entry-level slice rejection + pattern mismatch. Both detect the same underlying issues (wrong code, missing extensions) but organize errors across different field categories. |
 | mhd | MinimalProvideDocumentBundleClass | hl7 | constraint, entry, pattern | Validation model difference | random-parity | Bundle entry slice validation model difference: our validator matches entries by resourceType and delegates to sub-profile validators (catching code+extension errors), while HL7 uses conformsTo-based matching and reports entry-level slice rejection + pattern mismatch. Both detect the same underlying issues (wrong code, missing extensions) but organize errors across different field categories. |
@@ -133,41 +135,41 @@ These specific fields are excluded from parity comparison because validators rep
 
 ## Validation Timing
 
-HL7 `validate()` across 3196 resources: validate() 25.25s, Zod 3.70s, HL7 3058.28s.
+HL7 `validate()` across 3196 resources: validate() 26.49s, Zod 4.11s, HL7 4739.05s.
 
 | Package | Resources | Val Total | Val Avg | Zod Total | Zod Avg | HL7 Total | HL7 Avg |
 |---------|-----------|-----------|---------|-----------|---------|-------------------|-----------------|
-| ae-research | 10 | 0.11s | 10.8ms | 0.02s | 1.9ms | 32.60s | 16300.5ms |
-| au-core | 120 | 0.88s | 7.3ms | 0.13s | 1.1ms | 75.43s | 1508.6ms |
-| carin-bb | 44 | 1.29s | 29.3ms | 0.14s | 3.1ms | 70.82s | 2213.0ms |
-| ch-core | 176 | 1.01s | 5.7ms | 0.18s | 1.0ms | 82.96s | 1430.4ms |
-| cpg | 264 | 1.10s | 4.2ms | 0.47s | 1.8ms | 159.78s | 807.0ms |
-| cqfmeasures | 88 | 0.47s | 5.3ms | 0.09s | 1.0ms | 50.74s | 1951.6ms |
-| davinci-alerts | 20 | 0.17s | 8.7ms | 0.04s | 1.9ms | 80.73s | 5045.6ms |
-| davinci-cdex | 30 | 0.19s | 6.4ms | 0.06s | 2.1ms | 163.35s | 11668.1ms |
-| davinci-deqm | 68 | 0.41s | 6.0ms | 0.08s | 1.1ms | 90.85s | 4129.7ms |
-| davinci-drug-formulary | 42 | 0.62s | 14.8ms | 0.05s | 1.1ms | 101.67s | 6354.4ms |
-| davinci-dtr | 192 | 1.81s | 9.5ms | 0.10s | 0.5ms | 206.11s | 7361.0ms |
-| davinci-pas | 194 | 2.30s | 11.8ms | 0.18s | 0.9ms | 287.31s | 4953.6ms |
-| davinci-pdex | 118 | 0.34s | 2.9ms | 0.08s | 0.7ms | 282.02s | 10847.1ms |
-| de-basisprofil | 170 | 0.94s | 5.6ms | 0.18s | 1.1ms | 41.88s | 1102.0ms |
-| emedicinal-product | 30 | 0.19s | 6.2ms | 0.06s | 1.9ms | 28.17s | 939.1ms |
-| genomics-reporting | 96 | 0.32s | 3.3ms | 0.10s | 1.0ms | 61.03s | 1794.9ms |
-| ips | 76 | 0.24s | 3.2ms | 0.08s | 1.1ms | 50.49s | 935.1ms |
-| isik-basis | 126 | 1.54s | 12.3ms | 0.11s | 0.8ms | 39.24s | 700.7ms |
-| isik-medikation | 32 | 1.11s | 34.8ms | 0.03s | 1.1ms | 44.65s | 2790.4ms |
-| kbv-erp | 64 | 1.14s | 17.7ms | 0.07s | 1.1ms | 38.85s | 2428.0ms |
-| mcode | 142 | 0.72s | 5.1ms | 0.17s | 1.2ms | 94.67s | 1245.7ms |
-| mhd | 78 | 0.70s | 9.0ms | 0.13s | 1.7ms | 139.50s | 2250.0ms |
-| ndh | 176 | 0.53s | 3.0ms | 0.13s | 0.8ms | 102.95s | 1660.5ms |
-| physical-activity | 38 | 0.66s | 17.5ms | 0.09s | 2.4ms | 60.08s | 1877.3ms |
-| pixm | 30 | 0.19s | 6.4ms | 0.06s | 2.0ms | 60.03s | 2728.5ms |
-| qicore | 172 | 0.87s | 5.0ms | 0.25s | 1.5ms | 167.74s | 1290.3ms |
-| sdc | 320 | 2.35s | 7.4ms | 0.16s | 0.5ms | 109.53s | 1610.8ms |
-| sdoh | 50 | 0.88s | 17.6ms | 0.12s | 2.4ms | 89.48s | 2237.1ms |
-| smart | 18 | 0.74s | 41.0ms | 0.03s | 1.4ms | 44.72s | 3726.3ms |
-| us-core | 164 | 1.20s | 7.3ms | 0.24s | 1.4ms | 161.09s | 1464.5ms |
-| vitals | 48 | 0.23s | 4.9ms | 0.07s | 1.5ms | 39.81s | 1326.9ms |
+| ae-research | 10 | 0.13s | 12.9ms | 0.03s | 2.7ms | 57.60s | 28799.0ms |
+| au-core | 120 | 1.04s | 8.6ms | 0.16s | 1.3ms | 96.87s | 1937.4ms |
+| carin-bb | 44 | 0.87s | 19.7ms | 0.12s | 2.6ms | 150.69s | 4708.9ms |
+| ch-core | 176 | 1.26s | 7.2ms | 0.18s | 1.0ms | 126.73s | 2185.0ms |
+| cpg | 264 | 0.76s | 2.9ms | 0.32s | 1.2ms | 229.88s | 1161.0ms |
+| cqfmeasures | 88 | 0.60s | 6.8ms | 0.14s | 1.6ms | 80.06s | 3079.2ms |
+| davinci-alerts | 20 | 0.21s | 10.3ms | 0.04s | 2.1ms | 144.21s | 9013.0ms |
+| davinci-cdex | 30 | 0.27s | 9.0ms | 0.09s | 2.9ms | 147.51s | 10536.4ms |
+| davinci-deqm | 68 | 0.36s | 5.3ms | 0.05s | 0.8ms | 146.57s | 6662.1ms |
+| davinci-drug-formulary | 42 | 0.71s | 16.9ms | 0.08s | 1.9ms | 152.94s | 9558.9ms |
+| davinci-dtr | 192 | 1.54s | 8.0ms | 0.15s | 0.8ms | 451.23s | 16115.5ms |
+| davinci-pas | 194 | 1.89s | 9.7ms | 0.22s | 1.1ms | 445.32s | 7677.9ms |
+| davinci-pdex | 118 | 0.44s | 3.7ms | 0.10s | 0.8ms | 297.77s | 11452.8ms |
+| de-basisprofil | 170 | 0.91s | 5.3ms | 0.18s | 1.1ms | 62.49s | 1644.4ms |
+| emedicinal-product | 30 | 0.18s | 6.0ms | 0.05s | 1.7ms | 53.85s | 1794.9ms |
+| genomics-reporting | 96 | 0.44s | 4.6ms | 0.14s | 1.4ms | 110.70s | 3255.8ms |
+| ips | 76 | 0.44s | 5.8ms | 0.16s | 2.1ms | 59.75s | 1106.5ms |
+| isik-basis | 126 | 2.50s | 19.8ms | 0.14s | 1.1ms | 70.91s | 1266.2ms |
+| isik-medikation | 32 | 1.92s | 59.9ms | 0.04s | 1.4ms | 68.52s | 4282.6ms |
+| kbv-erp | 64 | 1.31s | 20.5ms | 0.08s | 1.3ms | 56.80s | 3549.9ms |
+| mcode | 142 | 0.76s | 5.4ms | 0.18s | 1.2ms | 160.87s | 2116.6ms |
+| mhd | 78 | 0.97s | 12.5ms | 0.17s | 2.2ms | 218.25s | 3520.2ms |
+| ndh | 176 | 0.83s | 4.7ms | 0.18s | 1.0ms | 188.85s | 3046.0ms |
+| physical-activity | 38 | 0.56s | 14.8ms | 0.11s | 2.8ms | 89.73s | 2804.0ms |
+| pixm | 30 | 0.26s | 8.5ms | 0.08s | 2.6ms | 75.72s | 3441.6ms |
+| qicore | 172 | 1.22s | 7.1ms | 0.28s | 1.6ms | 295.97s | 2276.7ms |
+| sdc | 320 | 1.85s | 5.8ms | 0.19s | 0.6ms | 177.50s | 2610.3ms |
+| sdoh | 50 | 0.64s | 12.8ms | 0.13s | 2.6ms | 146.97s | 3674.2ms |
+| smart | 18 | 0.33s | 18.4ms | 0.05s | 2.6ms | 58.46s | 4871.7ms |
+| us-core | 164 | 1.00s | 6.1ms | 0.19s | 1.2ms | 249.65s | 2269.5ms |
+| vitals | 48 | 0.29s | 6.1ms | 0.08s | 1.7ms | 66.68s | 2222.6ms |
 
 ## Environment
 - FHIR_RELEASE: all
