@@ -1,0 +1,616 @@
+{
+  "entries": [
+    {
+      "date": "2026-04-07T02:36:37.159Z",
+      "version": "1.2.0",
+      "packageCount": 28,
+      "hl7Version": "6.9.5",
+      "firelyVersion": "3.1.1",
+      "firely": {
+        "empty": 97,
+        "random": 91,
+        "validation": 86,
+        "emptyTotal": 566,
+        "randomTotal": 544,
+        "validationTotal": 544,
+        "excluded": 103
+      },
+      "hl7": {
+        "empty": 100,
+        "random": 91,
+        "validation": 83,
+        "emptyTotal": 571,
+        "randomTotal": 609,
+        "validationTotal": 609,
+        "excluded": 38
+      },
+      "internal": {
+        "empty": 92,
+        "random": 90,
+        "validation": 91,
+        "emptyTotal": 1455,
+        "randomTotal": 1434,
+        "validationTotal": 1434,
+        "excluded": 0
+      }
+    },
+    {
+      "date": "2026-04-07T02:36:37.159Z",
+      "version": "1.2.1",
+      "packageCount": 28,
+      "hl7Version": "6.9.5",
+      "firelyVersion": "3.1.1",
+      "firely": {
+        "empty": 97,
+        "random": 91,
+        "validation": 86,
+        "emptyTotal": 566,
+        "randomTotal": 544,
+        "validationTotal": 544,
+        "excluded": 103
+      },
+      "hl7": {
+        "empty": 100,
+        "random": 91,
+        "validation": 83,
+        "emptyTotal": 571,
+        "randomTotal": 609,
+        "validationTotal": 609,
+        "excluded": 38
+      },
+      "internal": {
+        "empty": 92,
+        "random": 90,
+        "validation": 91,
+        "emptyTotal": 1455,
+        "randomTotal": 1434,
+        "validationTotal": 1434,
+        "excluded": 0
+      }
+    },
+    {
+      "date": "2026-07-26T09:25:27.601Z",
+      "version": "1.5.19",
+      "packageCount": 30,
+      "hl7Version": "6.9.12",
+      "firelyVersion": "3.3.0",
+      "firely": {
+        "empty": 99,
+        "random": 91,
+        "validation": 82,
+        "emptyTotal": 524,
+        "randomTotal": 519,
+        "validationTotal": 519,
+        "excluded": 158
+      },
+      "hl7": {
+        "empty": 100,
+        "random": 97,
+        "validation": 81,
+        "emptyTotal": 583,
+        "randomTotal": 638,
+        "validationTotal": 638,
+        "excluded": 39
+      },
+      "internal": {
+        "empty": 97,
+        "random": 88,
+        "validation": 85,
+        "emptyTotal": 1470,
+        "randomTotal": 1468,
+        "validationTotal": 1468,
+        "excluded": 0
+      }
+    },
+    {
+      "date": "2026-07-30T05:32:03.673Z",
+      "version": "1.5.20",
+      "packageCount": 30,
+      "hl7Version": "6.9.12",
+      "firelyVersion": "3.3.0",
+      "firely": {
+        "empty": 100,
+        "random": 91,
+        "validation": 78,
+        "emptyTotal": 505,
+        "randomTotal": 498,
+        "validationTotal": 498,
+        "excluded": 204
+      },
+      "hl7": {
+        "empty": 100,
+        "random": 100,
+        "validation": 78,
+        "emptyTotal": 605,
+        "randomTotal": 655,
+        "validationTotal": 655,
+        "excluded": 47
+      },
+      "internal": {
+        "empty": 96,
+        "random": 82,
+        "validation": 78,
+        "emptyTotal": 1574,
+        "randomTotal": 1574,
+        "validationTotal": 1574,
+        "excluded": 0
+      }
+    },
+    {
+      "date": "2026-08-02T16:33:58.094Z",
+      "version": "1.5.21",
+      "packageCount": 30,
+      "hl7Version": "6.10.0",
+      "firelyVersion": "3.3.0",
+      "firely": {
+        "empty": 91,
+        "random": 91,
+        "validation": 62,
+        "emptyTotal": 675,
+        "randomTotal": 674,
+        "validationTotal": 674,
+        "excluded": 28
+      },
+      "hl7": {
+        "empty": 100,
+        "random": 100,
+        "validation": 77,
+        "emptyTotal": 613,
+        "randomTotal": 675,
+        "validationTotal": 675,
+        "excluded": 27
+      },
+      "internal": {
+        "empty": 96,
+        "random": 82,
+        "validation": 78,
+        "emptyTotal": 1574,
+        "randomTotal": 1574,
+        "validationTotal": 1574,
+        "excluded": 0
+      }
+    },
+    {
+      "date": "2026-08-05T13:20:58.952Z",
+      "version": "1.6.0",
+      "packageCount": 31,
+      "hl7Version": "6.10.0",
+      "firelyVersion": "3.3.0",
+      "firely": {
+        "empty": 88,
+        "random": 89,
+        "validation": 59,
+        "emptyTotal": 690,
+        "randomTotal": 689,
+        "validationTotal": 689,
+        "excluded": 28
+      },
+      "hl7": {
+        "empty": 100,
+        "random": 99,
+        "validation": 76,
+        "emptyTotal": 614,
+        "randomTotal": 690,
+        "validationTotal": 690,
+        "excluded": 27
+      },
+      "internal": {
+        "empty": 97,
+        "random": 82,
+        "validation": 78,
+        "emptyTotal": 1598,
+        "randomTotal": 1598,
+        "validationTotal": 1598,
+        "excluded": 0
+      }
+    },
+    {
+      "date": "2026-08-07T11:09:00.549Z",
+      "version": "1.6.1",
+      "packageCount": 31,
+      "hl7Version": "6.10.1",
+      "firelyVersion": "3.3.1",
+      "firely": {
+        "empty": 89,
+        "random": 89,
+        "validation": 60,
+        "emptyTotal": 690,
+        "randomTotal": 689,
+        "validationTotal": 689,
+        "excluded": 28
+      },
+      "hl7": {
+        "empty": 100,
+        "random": 99,
+        "validation": 76,
+        "emptyTotal": 614,
+        "randomTotal": 690,
+        "validationTotal": 690,
+        "excluded": 27
+      },
+      "internal": {
+        "empty": 97,
+        "random": 82,
+        "validation": 78,
+        "emptyTotal": 1598,
+        "randomTotal": 1598,
+        "validationTotal": 1598,
+        "excluded": 0
+      }
+    },
+    {
+      "date": "2026-08-08T23:25:05.249Z",
+      "version": "1.6.2",
+      "packageCount": 31,
+      "hl7Version": "6.10.1",
+      "firelyVersion": "3.3.1",
+      "firely": {
+        "empty": 89,
+        "random": 89,
+        "validation": 60,
+        "emptyTotal": 690,
+        "randomTotal": 689,
+        "validationTotal": 689,
+        "excluded": 28
+      },
+      "hl7": {
+        "empty": 100,
+        "random": 99,
+        "validation": 76,
+        "emptyTotal": 614,
+        "randomTotal": 690,
+        "validationTotal": 690,
+        "excluded": 27
+      },
+      "internal": {
+        "empty": 97,
+        "random": 82,
+        "validation": 78,
+        "emptyTotal": 1598,
+        "randomTotal": 1598,
+        "validationTotal": 1598,
+        "excluded": 0
+      }
+    },
+    {
+      "date": "2026-08-09T00:30:50.291Z",
+      "version": "1.6.3",
+      "packageCount": 31,
+      "hl7Version": "6.10.1",
+      "firelyVersion": "3.3.1",
+      "firely": {
+        "empty": 88,
+        "random": 90,
+        "validation": 60,
+        "emptyTotal": 690,
+        "randomTotal": 689,
+        "validationTotal": 689,
+        "excluded": 28
+      },
+      "hl7": {
+        "empty": 100,
+        "random": 99,
+        "validation": 76,
+        "emptyTotal": 614,
+        "randomTotal": 690,
+        "validationTotal": 690,
+        "excluded": 27
+      },
+      "internal": {
+        "empty": 97,
+        "random": 82,
+        "validation": 78,
+        "emptyTotal": 1598,
+        "randomTotal": 1598,
+        "validationTotal": 1598,
+        "excluded": 0
+      }
+    },
+    {
+      "date": "2026-08-09T10:40:44.863Z",
+      "version": "1.6.4",
+      "packageCount": 31,
+      "hl7Version": "6.10.1",
+      "firelyVersion": "3.3.1",
+      "firely": {
+        "empty": 88,
+        "random": 90,
+        "validation": 60,
+        "emptyTotal": 690,
+        "randomTotal": 689,
+        "validationTotal": 689,
+        "excluded": 28
+      },
+      "hl7": {
+        "empty": 100,
+        "random": 99,
+        "validation": 76,
+        "emptyTotal": 614,
+        "randomTotal": 690,
+        "validationTotal": 690,
+        "excluded": 27
+      },
+      "internal": {
+        "empty": 97,
+        "random": 82,
+        "validation": 78,
+        "emptyTotal": 1598,
+        "randomTotal": 1598,
+        "validationTotal": 1598,
+        "excluded": 0
+      }
+    },
+    {
+      "date": "2026-08-09T13:40:11.522Z",
+      "version": "1.6.5",
+      "packageCount": 31,
+      "hl7Version": "6.10.1",
+      "firelyVersion": "3.3.1",
+      "firely": {
+        "empty": 89,
+        "random": 91,
+        "validation": 60,
+        "emptyTotal": 690,
+        "randomTotal": 689,
+        "validationTotal": 689,
+        "excluded": 28
+      },
+      "hl7": {
+        "empty": 100,
+        "random": 99,
+        "validation": 76,
+        "emptyTotal": 614,
+        "randomTotal": 690,
+        "validationTotal": 690,
+        "excluded": 27
+      },
+      "internal": {
+        "empty": 97,
+        "random": 82,
+        "validation": 78,
+        "emptyTotal": 1598,
+        "randomTotal": 1598,
+        "validationTotal": 1598,
+        "excluded": 0
+      }
+    },
+    {
+      "date": "2026-08-14T20:40:06.147Z",
+      "version": "1.6.6",
+      "packageCount": 31,
+      "hl7Version": "6.10.2",
+      "firelyVersion": "3.3.1",
+      "firely": {
+        "empty": 88,
+        "random": 90,
+        "validation": 63,
+        "emptyTotal": 690,
+        "randomTotal": 689,
+        "validationTotal": 689,
+        "excluded": 28
+      },
+      "hl7": {
+        "empty": 100,
+        "random": 99,
+        "validation": 76,
+        "emptyTotal": 642,
+        "randomTotal": 690,
+        "validationTotal": 690,
+        "excluded": 27
+      },
+      "internal": {
+        "empty": 97,
+        "random": 82,
+        "validation": 78,
+        "emptyTotal": 1598,
+        "randomTotal": 1598,
+        "validationTotal": 1598,
+        "excluded": 0
+      }
+    },
+    {
+      "date": "2026-08-16T13:02:14.270Z",
+      "version": "1.6.7",
+      "packageCount": 31,
+      "hl7Version": "6.10.2",
+      "firelyVersion": "3.3.1",
+      "firely": {
+        "empty": 89,
+        "random": 90,
+        "validation": 60,
+        "emptyTotal": 690,
+        "randomTotal": 689,
+        "validationTotal": 689,
+        "excluded": 28
+      },
+      "hl7": {
+        "empty": 100,
+        "random": 99,
+        "validation": 76,
+        "emptyTotal": 642,
+        "randomTotal": 690,
+        "validationTotal": 690,
+        "excluded": 27
+      },
+      "internal": {
+        "empty": 97,
+        "random": 82,
+        "validation": 78,
+        "emptyTotal": 1598,
+        "randomTotal": 1598,
+        "validationTotal": 1598,
+        "excluded": 0
+      }
+    },
+    {
+      "date": "2026-08-26T03:19:24.543Z",
+      "version": "1.6.8",
+      "packageCount": 31,
+      "hl7Version": "6.10.2",
+      "firelyVersion": "3.3.1",
+      "firely": {
+        "empty": 89,
+        "random": 90,
+        "validation": 59,
+        "emptyTotal": 690,
+        "randomTotal": 689,
+        "validationTotal": 689,
+        "excluded": 28
+      },
+      "hl7": {
+        "empty": 100,
+        "random": 100,
+        "validation": 76,
+        "emptyTotal": 642,
+        "randomTotal": 690,
+        "validationTotal": 690,
+        "excluded": 27
+      },
+      "internal": {
+        "empty": 99,
+        "random": 86,
+        "validation": 78,
+        "emptyTotal": 1598,
+        "randomTotal": 1598,
+        "validationTotal": 1598,
+        "excluded": 0
+      }
+    },
+    {
+      "date": "2026-08-26T17:41:36.839Z",
+      "version": "1.6.9",
+      "packageCount": 31,
+      "hl7Version": "6.10.2",
+      "firelyVersion": "3.3.1",
+      "firely": {
+        "empty": 89,
+        "random": 90,
+        "validation": 59,
+        "emptyTotal": 690,
+        "randomTotal": 690,
+        "validationTotal": 690,
+        "excluded": 27
+      },
+      "hl7": {
+        "empty": 100,
+        "random": 100,
+        "validation": 76,
+        "emptyTotal": 642,
+        "randomTotal": 690,
+        "validationTotal": 690,
+        "excluded": 27
+      },
+      "internal": {
+        "empty": 99,
+        "random": 86,
+        "validation": 78,
+        "emptyTotal": 1598,
+        "randomTotal": 1598,
+        "validationTotal": 1598,
+        "excluded": 0
+      }
+    },
+    {
+      "date": "2026-08-26T21:03:33.069Z",
+      "version": "1.6.10",
+      "packageCount": 31,
+      "hl7Version": "6.10.2",
+      "firelyVersion": "3.3.1",
+      "firely": {
+        "empty": 87,
+        "random": 90,
+        "validation": 59,
+        "emptyTotal": 690,
+        "randomTotal": 689,
+        "validationTotal": 689,
+        "excluded": 28
+      },
+      "hl7": {
+        "empty": 100,
+        "random": 100,
+        "validation": 76,
+        "emptyTotal": 642,
+        "randomTotal": 690,
+        "validationTotal": 690,
+        "excluded": 27
+      },
+      "internal": {
+        "empty": 99,
+        "random": 86,
+        "validation": 78,
+        "emptyTotal": 1598,
+        "randomTotal": 1598,
+        "validationTotal": 1598,
+        "excluded": 0
+      }
+    },
+    {
+      "date": "2026-08-28T08:08:52.956Z",
+      "version": "1.6.11",
+      "packageCount": 31,
+      "hl7Version": "6.10.3",
+      "firelyVersion": "3.3.1",
+      "firely": {
+        "empty": 97,
+        "random": 92,
+        "validation": 72,
+        "emptyTotal": 684,
+        "randomTotal": 683,
+        "validationTotal": 683,
+        "excluded": 34
+      },
+      "hl7": {
+        "empty": 100,
+        "random": 100,
+        "validation": 76,
+        "emptyTotal": 642,
+        "randomTotal": 690,
+        "validationTotal": 690,
+        "excluded": 27
+      },
+      "internal": {
+        "empty": 99,
+        "random": 87,
+        "validation": 78,
+        "emptyTotal": 1598,
+        "randomTotal": 1598,
+        "validationTotal": 1598,
+        "excluded": 0
+      }
+    },
+    {
+      "date": "2026-08-29T11:17:03.812Z",
+      "version": "1.6.12",
+      "packageCount": 31,
+      "hl7Version": "6.10.3",
+      "firelyVersion": "3.3.1",
+      "firely": {
+        "empty": 100,
+        "random": 93,
+        "validation": 74,
+        "emptyTotal": 666,
+        "randomTotal": 665,
+        "validationTotal": 665,
+        "excluded": 52
+      },
+      "hl7": {
+        "empty": 100,
+        "random": 100,
+        "validation": 76,
+        "emptyTotal": 657,
+        "randomTotal": 705,
+        "validationTotal": 705,
+        "excluded": 12
+      },
+      "internal": {
+        "empty": 99,
+        "random": 87,
+        "validation": 78,
+        "emptyTotal": 1598,
+        "randomTotal": 1598,
+        "validationTotal": 1598,
+        "excluded": 0
+      }
+    }
+  ]
+}
