@@ -1,0 +1,1413 @@
+{
+  "generated": "2026-08-29T11:20:51.186Z",
+  "babelfhirVersion": "1.6.12",
+  "fhirRelease": "R4",
+  "validator": "HL7 Java Validator",
+  "validatorVersion": "6.10.3",
+  "reportUrl": "https://max-health-inc.github.io/BabelFHIR-TS",
+  "excludedProfiles": 12,
+  "excludedDetails": [
+    {
+      "pkg": "au-core",
+      "profile": "AUCoreConditionClass",
+      "validator": "hl7",
+      "category": "Terminology server limitation",
+      "scope": "empty-parity, random-parity, random-validation",
+      "error": "tx.fhir.org: Australian ValueSet filter not understood",
+      "reason": "Curated (hl7 6.9.4)",
+      "source": "Excluded"
+    },
+    {
+      "pkg": "au-core",
+      "profile": "AUCoreMedicationClass",
+      "validator": "hl7",
+      "category": "Terminology server limitation",
+      "scope": "empty-parity, random-parity, random-validation",
+      "error": "tx.fhir.org: Australian ValueSet filter not understood",
+      "reason": "Curated (hl7 6.9.4)",
+      "source": "Excluded"
+    },
+    {
+      "pkg": "au-core",
+      "profile": "AUCoreMedicationRequestClass",
+      "validator": "hl7",
+      "category": "Terminology server limitation",
+      "scope": "empty-parity, random-parity, random-validation",
+      "error": "tx.fhir.org: Australian ValueSet filter not understood",
+      "reason": "Curated (hl7 6.9.4)",
+      "source": "Excluded"
+    },
+    {
+      "pkg": "au-core",
+      "profile": "AUCoreProcedureClass",
+      "validator": "hl7",
+      "category": "Terminology server limitation",
+      "scope": "empty-parity, random-parity, random-validation",
+      "error": "tx.fhir.org: Australian ValueSet filter not understood",
+      "reason": "Curated (hl7 6.9.4)",
+      "source": "Excluded"
+    },
+    {
+      "pkg": "au-core",
+      "profile": "AUCoreSmokingStatusClass",
+      "validator": "hl7",
+      "category": "SNOMED edition mismatch",
+      "scope": "empty-parity, random-parity, random-validation",
+      "error": "SNOMED AU code not in International Edition",
+      "reason": "Curated (hl7 6.9.4)",
+      "source": "Excluded"
+    },
+    {
+      "pkg": "cpg",
+      "profile": "CHFBodyWeightClass",
+      "validator": "hl7",
+      "category": "Cross-profile validation",
+      "scope": "empty-parity, random-parity, random-validation",
+      "error": "HL7 bp",
+      "reason": "4.0.1 cross-validation on vital-signs Observation",
+      "source": "Excluded"
+    },
+    {
+      "pkg": "cqfmeasures",
+      "profile": "CQFMPublishableMeasureClass",
+      "validator": "hl7",
+      "category": "Failed to parse validator output",
+      "scope": "empty-parity, random-parity, random-validation",
+      "error": "HL7 validator crashes — unparseable output",
+      "reason": "Curated (hl7 6.9.4)",
+      "source": "Excluded"
+    },
+    {
+      "pkg": "isik-basis",
+      "profile": "ISiKDiagnoseClass",
+      "validator": "hl7",
+      "category": "Missing snapshot",
+      "scope": "empty-parity, random-parity, random-validation",
+      "error": "Profile ISiKDiagnose",
+      "reason": "4.0.3 has no snapshot",
+      "source": "Excluded"
+    },
+    {
+      "pkg": "isik-basis",
+      "profile": "ISiKVersicherungsverhaeltnisGesetzlichClass",
+      "validator": "hl7",
+      "category": "Missing snapshot",
+      "scope": "empty-parity, random-parity, random-validation",
+      "error": "Profile ISiKVersicherungsverhaeltnisGesetzlich",
+      "reason": "4.0.3 has no snapshot",
+      "source": "Excluded"
+    },
+    {
+      "pkg": "isik-basis",
+      "profile": "ISiKVersicherungsverhaeltnisSelbstzahlerClass",
+      "validator": "hl7",
+      "category": "Missing snapshot",
+      "scope": "empty-parity, random-parity, random-validation",
+      "error": "Profile ISiKVersicherungsverhaeltnisSelbstzahler",
+      "reason": "4.0.3 has no snapshot",
+      "source": "Excluded"
+    },
+    {
+      "pkg": "kbv-erp",
+      "profile": "KBVPRERPBundleClass",
+      "validator": "hl7",
+      "category": "Missing snapshot",
+      "scope": "empty-parity, random-parity, random-validation",
+      "error": "Profile KBV_PR_ERP_Bundle",
+      "reason": "1.1.0 has no snapshot",
+      "source": "Excluded"
+    },
+    {
+      "pkg": "us-core",
+      "profile": "USCoreVitalSignsProfileClass",
+      "validator": "hl7",
+      "category": "Cross-profile validation",
+      "scope": "empty-parity, random-parity, random-validation",
+      "error": "HL7 bp",
+      "reason": "4.0.1 cross-validation on vital-signs Observation",
+      "source": "Excluded"
+    }
+  ],
+  "excludedFields": [
+    {
+      "pkg": "au-core",
+      "profile": "AUCorePatientClass",
+      "validator": "hl7",
+      "fields": "country",
+      "category": "Validation model difference",
+      "scope": "random-parity",
+      "reason": "HL7 resolves au-address and au-base but does not report the fixed country, fixed identifier system or required type they pin"
+    },
+    {
+      "pkg": "au-core",
+      "profile": "AUCorePractitionerClass",
+      "validator": "hl7",
+      "fields": "country, type, unclassified",
+      "category": "Validation model difference",
+      "scope": "random-parity",
+      "reason": "HL7 resolves au-address and au-base but does not report the fixed country, fixed identifier system or required type they pin"
+    },
+    {
+      "pkg": "au-core",
+      "profile": "AUCorePractitionerRoleClass",
+      "validator": "hl7",
+      "fields": "type",
+      "category": "Validation model difference",
+      "scope": "random-parity",
+      "reason": "HL7 resolves au-address and au-base but does not report the fixed country, fixed identifier system or required type they pin"
+    },
+    {
+      "pkg": "au-core",
+      "profile": "AUCoreRelatedPersonClass",
+      "validator": "hl7",
+      "fields": "country, type, system, unclassified",
+      "category": "Validation model difference",
+      "scope": "random-parity",
+      "reason": "HL7 resolves au-address and au-base but does not report the fixed country, fixed identifier system or required type they pin"
+    },
+    {
+      "pkg": "au-core",
+      "profile": "AUCoreMedicationStatementClass",
+      "validator": "hl7",
+      "fields": "unclassified",
+      "category": "Terminology server limitation",
+      "scope": "random-parity",
+      "reason": "tx.fhir.org: Australian ValueSet filter not understood"
+    },
+    {
+      "pkg": "davinci-pdex",
+      "profile": "PDexMultiMemberMatchRequestParametersClass",
+      "validator": "hl7",
+      "fields": "constraint",
+      "category": "Validation model difference",
+      "scope": "random-parity",
+      "reason": "HL7 rejects example.org URLs in Consent.policy.uri via a built-in rule, not a FHIRPath constraint in the SD; reported intermittently"
+    },
+    {
+      "pkg": "de-basisprofil",
+      "profile": "VitalSignDEArterielleSauerstoffsaettigungPulsoximetrieClass",
+      "validator": "hl7",
+      "fields": "coding",
+      "category": "Discriminator evaluation failure",
+      "scope": "random-parity",
+      "reason": "HL7 $this discriminator limitation: undercounts coding:loinc slice matches (reports min=2 found=1 despite 3 LOINC codings present) due to faulty $this pattern evaluation inherited from base VitalSignDE profile"
+    },
+    {
+      "pkg": "de-basisprofil",
+      "profile": "VitalSignDEArterielleSauerstoffsaettigungPulsoximetrieClass",
+      "validator": "hl7",
+      "fields": "pattern",
+      "category": "Validation model difference",
+      "scope": "random-parity",
+      "reason": "HL7 reports one fixed-value violation twice, anchored to both profiles that pin the unit; we report it once"
+    },
+    {
+      "pkg": "de-basisprofil",
+      "profile": "VitalSignDEAtemfrequenzClass",
+      "validator": "hl7",
+      "fields": "pattern",
+      "category": "Validation model difference",
+      "scope": "random-parity",
+      "reason": "HL7 reports one fixed-value violation twice, anchored to both profiles that pin the unit; we report it once"
+    },
+    {
+      "pkg": "de-basisprofil",
+      "profile": "VitalSignDEHerzfrequenzClass",
+      "validator": "hl7",
+      "fields": "pattern",
+      "category": "Validation model difference",
+      "scope": "random-parity",
+      "reason": "HL7 reports one fixed-value violation twice, anchored to both profiles that pin the unit; we report it once"
+    },
+    {
+      "pkg": "de-basisprofil",
+      "profile": "VitalSignDEKoerperkerntemperaturClass",
+      "validator": "hl7",
+      "fields": "pattern",
+      "category": "Validation model difference",
+      "scope": "random-parity",
+      "reason": "HL7 reports one fixed-value violation twice, anchored to both profiles that pin the unit; we report it once"
+    },
+    {
+      "pkg": "de-basisprofil",
+      "profile": "VitalSignDEArterielleSauerstoffsaettigungClass",
+      "validator": "hl7",
+      "fields": "pattern",
+      "category": "Validation model difference",
+      "scope": "random-parity",
+      "reason": "HL7 reports one fixed-value violation twice, anchored to both profiles that pin the unit; we report it once"
+    },
+    {
+      "pkg": "mhd",
+      "profile": "ProvideDocumentBundleResponseClass",
+      "validator": "hl7",
+      "fields": "unclassified",
+      "category": "Bundled context required",
+      "scope": "random-parity",
+      "reason": "bdl-8 FHIRPath empty propagation: fullUrl.contains(/_history/).not() yields empty when fullUrl absent; fhirpath.js all() returns false, HL7 returns true"
+    },
+    {
+      "pkg": "mhd",
+      "profile": "ComprehensiveProvideDocumentBundleClass",
+      "validator": "hl7",
+      "fields": "constraint, entry, pattern",
+      "category": "Validation model difference",
+      "scope": "random-parity",
+      "reason": "Bundle entry slice validation model difference: our validator matches entries by resourceType and delegates to sub-profile validators (catching code+extension errors), while HL7 uses conformsTo-based matching and reports entry-level slice rejection + pattern mismatch. Both detect the same underlying issues (wrong code, missing extensions) but organize errors across different field categories."
+    },
+    {
+      "pkg": "mhd",
+      "profile": "MinimalProvideDocumentBundleClass",
+      "validator": "hl7",
+      "fields": "constraint, entry, pattern",
+      "category": "Validation model difference",
+      "scope": "random-parity",
+      "reason": "Bundle entry slice validation model difference: our validator matches entries by resourceType and delegates to sub-profile validators (catching code+extension errors), while HL7 uses conformsTo-based matching and reports entry-level slice rejection + pattern mismatch. Both detect the same underlying issues (wrong code, missing extensions) but organize errors across different field categories."
+    },
+    {
+      "pkg": "mhd",
+      "profile": "UnContainedComprehensiveProvideDocumentBundleClass",
+      "validator": "hl7",
+      "fields": "constraint, entry, pattern",
+      "category": "Validation model difference",
+      "scope": "random-parity",
+      "reason": "Bundle entry slice validation model difference: our validator matches entries by resourceType and delegates to sub-profile validators (catching code+extension errors), while HL7 uses conformsTo-based matching and reports entry-level slice rejection + pattern mismatch. Both detect the same underlying issues (wrong code, missing extensions) but organize errors across different field categories."
+    },
+    {
+      "pkg": "sdc",
+      "profile": "SDCQuestionnaireExtractTemplateClass",
+      "validator": "hl7",
+      "fields": "extension",
+      "category": "Empty parity field miss",
+      "scope": "empty-parity",
+      "reason": "HL7 misses inherited min=1 on Questionnaire.url (tightened by sdc-questionnaire)"
+    },
+    {
+      "pkg": "vitals",
+      "profile": "BodyLengthClass",
+      "validator": "hl7",
+      "fields": "constraint",
+      "category": "Cross-profile validation",
+      "scope": "random-parity",
+      "reason": "HL7 measures body length (LOINC 8306-3, absent from the core vital-signs value set) against core bodyheight and demands its BodyHeightCode slice, LOINC 8302-2; reported intermittently"
+    },
+    {
+      "pkg": "vitals",
+      "profile": "HeadOccipitalFrontalCircumferenceClass",
+      "validator": "hl7",
+      "fields": "constraint",
+      "category": "Cross-profile validation",
+      "scope": "random-parity",
+      "reason": "HL7 measures head circumference by tape measure (LOINC 8287-5, absent from the core vital-signs value set) against core headcircum and demands its HeadCircumCode slice, LOINC 9843-4; reported intermittently"
+    },
+    {
+      "pkg": "vitals",
+      "profile": "BloodPressurePanelClass",
+      "validator": "hl7",
+      "fields": "component",
+      "category": "Cross-profile validation",
+      "scope": "random-parity",
+      "reason": "HL7 applies core bp (component 2..*, DiastolicBP 1..1) to LOINC 85354-9; blood-pressure-panel itself declares component 1..* with DiastolicBP 0..1"
+    }
+  ],
+  "unsupportedConstraints": {
+    "total": 0,
+    "perPackage": []
+  },
+  "timing": {
+    "totalResources": 3196,
+    "totalS": 25.25,
+    "totalZodS": 3.7,
+    "totalExtS": 3058.28,
+    "packages": [
+      {
+        "name": "ae-research",
+        "resources": 10,
+        "totalS": 0.11,
+        "avgMs": 10.8,
+        "zodTotalS": 0.02,
+        "zodAvgMs": 1.9,
+        "extTotalS": 32.6,
+        "extAvgMs": 16300.5
+      },
+      {
+        "name": "au-core",
+        "resources": 120,
+        "totalS": 0.88,
+        "avgMs": 7.3,
+        "zodTotalS": 0.13,
+        "zodAvgMs": 1.1,
+        "extTotalS": 75.43,
+        "extAvgMs": 1508.6
+      },
+      {
+        "name": "carin-bb",
+        "resources": 44,
+        "totalS": 1.29,
+        "avgMs": 29.3,
+        "zodTotalS": 0.14,
+        "zodAvgMs": 3.1,
+        "extTotalS": 70.82,
+        "extAvgMs": 2213
+      },
+      {
+        "name": "ch-core",
+        "resources": 176,
+        "totalS": 1.01,
+        "avgMs": 5.7,
+        "zodTotalS": 0.18,
+        "zodAvgMs": 1,
+        "extTotalS": 82.96,
+        "extAvgMs": 1430.4
+      },
+      {
+        "name": "cpg",
+        "resources": 264,
+        "totalS": 1.1,
+        "avgMs": 4.2,
+        "zodTotalS": 0.47,
+        "zodAvgMs": 1.8,
+        "extTotalS": 159.78,
+        "extAvgMs": 807
+      },
+      {
+        "name": "cqfmeasures",
+        "resources": 88,
+        "totalS": 0.47,
+        "avgMs": 5.3,
+        "zodTotalS": 0.09,
+        "zodAvgMs": 1,
+        "extTotalS": 50.74,
+        "extAvgMs": 1951.6
+      },
+      {
+        "name": "davinci-alerts",
+        "resources": 20,
+        "totalS": 0.17,
+        "avgMs": 8.7,
+        "zodTotalS": 0.04,
+        "zodAvgMs": 1.9,
+        "extTotalS": 80.73,
+        "extAvgMs": 5045.6
+      },
+      {
+        "name": "davinci-cdex",
+        "resources": 30,
+        "totalS": 0.19,
+        "avgMs": 6.4,
+        "zodTotalS": 0.06,
+        "zodAvgMs": 2.1,
+        "extTotalS": 163.35,
+        "extAvgMs": 11668.1
+      },
+      {
+        "name": "davinci-deqm",
+        "resources": 68,
+        "totalS": 0.41,
+        "avgMs": 6,
+        "zodTotalS": 0.08,
+        "zodAvgMs": 1.1,
+        "extTotalS": 90.85,
+        "extAvgMs": 4129.7
+      },
+      {
+        "name": "davinci-drug-formulary",
+        "resources": 42,
+        "totalS": 0.62,
+        "avgMs": 14.8,
+        "zodTotalS": 0.05,
+        "zodAvgMs": 1.1,
+        "extTotalS": 101.67,
+        "extAvgMs": 6354.4
+      },
+      {
+        "name": "davinci-dtr",
+        "resources": 192,
+        "totalS": 1.81,
+        "avgMs": 9.5,
+        "zodTotalS": 0.1,
+        "zodAvgMs": 0.5,
+        "extTotalS": 206.11,
+        "extAvgMs": 7361
+      },
+      {
+        "name": "davinci-pas",
+        "resources": 194,
+        "totalS": 2.3,
+        "avgMs": 11.8,
+        "zodTotalS": 0.18,
+        "zodAvgMs": 0.9,
+        "extTotalS": 287.31,
+        "extAvgMs": 4953.6
+      },
+      {
+        "name": "davinci-pdex",
+        "resources": 118,
+        "totalS": 0.34,
+        "avgMs": 2.9,
+        "zodTotalS": 0.08,
+        "zodAvgMs": 0.7,
+        "extTotalS": 282.02,
+        "extAvgMs": 10847.1
+      },
+      {
+        "name": "de-basisprofil",
+        "resources": 170,
+        "totalS": 0.94,
+        "avgMs": 5.6,
+        "zodTotalS": 0.18,
+        "zodAvgMs": 1.1,
+        "extTotalS": 41.88,
+        "extAvgMs": 1102
+      },
+      {
+        "name": "emedicinal-product",
+        "resources": 30,
+        "totalS": 0.19,
+        "avgMs": 6.2,
+        "zodTotalS": 0.06,
+        "zodAvgMs": 1.9,
+        "extTotalS": 28.17,
+        "extAvgMs": 939.1
+      },
+      {
+        "name": "genomics-reporting",
+        "resources": 96,
+        "totalS": 0.32,
+        "avgMs": 3.3,
+        "zodTotalS": 0.1,
+        "zodAvgMs": 1,
+        "extTotalS": 61.03,
+        "extAvgMs": 1794.9
+      },
+      {
+        "name": "ips",
+        "resources": 76,
+        "totalS": 0.24,
+        "avgMs": 3.2,
+        "zodTotalS": 0.08,
+        "zodAvgMs": 1.1,
+        "extTotalS": 50.49,
+        "extAvgMs": 935.1
+      },
+      {
+        "name": "isik-basis",
+        "resources": 126,
+        "totalS": 1.54,
+        "avgMs": 12.3,
+        "zodTotalS": 0.11,
+        "zodAvgMs": 0.8,
+        "extTotalS": 39.24,
+        "extAvgMs": 700.7
+      },
+      {
+        "name": "isik-medikation",
+        "resources": 32,
+        "totalS": 1.11,
+        "avgMs": 34.8,
+        "zodTotalS": 0.03,
+        "zodAvgMs": 1.1,
+        "extTotalS": 44.65,
+        "extAvgMs": 2790.4
+      },
+      {
+        "name": "kbv-erp",
+        "resources": 64,
+        "totalS": 1.14,
+        "avgMs": 17.7,
+        "zodTotalS": 0.07,
+        "zodAvgMs": 1.1,
+        "extTotalS": 38.85,
+        "extAvgMs": 2428
+      },
+      {
+        "name": "mcode",
+        "resources": 142,
+        "totalS": 0.72,
+        "avgMs": 5.1,
+        "zodTotalS": 0.17,
+        "zodAvgMs": 1.2,
+        "extTotalS": 94.67,
+        "extAvgMs": 1245.7
+      },
+      {
+        "name": "mhd",
+        "resources": 78,
+        "totalS": 0.7,
+        "avgMs": 9,
+        "zodTotalS": 0.13,
+        "zodAvgMs": 1.7,
+        "extTotalS": 139.5,
+        "extAvgMs": 2250
+      },
+      {
+        "name": "ndh",
+        "resources": 176,
+        "totalS": 0.53,
+        "avgMs": 3,
+        "zodTotalS": 0.13,
+        "zodAvgMs": 0.8,
+        "extTotalS": 102.95,
+        "extAvgMs": 1660.5
+      },
+      {
+        "name": "physical-activity",
+        "resources": 38,
+        "totalS": 0.66,
+        "avgMs": 17.5,
+        "zodTotalS": 0.09,
+        "zodAvgMs": 2.4,
+        "extTotalS": 60.08,
+        "extAvgMs": 1877.3
+      },
+      {
+        "name": "pixm",
+        "resources": 30,
+        "totalS": 0.19,
+        "avgMs": 6.4,
+        "zodTotalS": 0.06,
+        "zodAvgMs": 2,
+        "extTotalS": 60.03,
+        "extAvgMs": 2728.5
+      },
+      {
+        "name": "qicore",
+        "resources": 172,
+        "totalS": 0.87,
+        "avgMs": 5,
+        "zodTotalS": 0.25,
+        "zodAvgMs": 1.5,
+        "extTotalS": 167.74,
+        "extAvgMs": 1290.3
+      },
+      {
+        "name": "sdc",
+        "resources": 320,
+        "totalS": 2.35,
+        "avgMs": 7.4,
+        "zodTotalS": 0.16,
+        "zodAvgMs": 0.5,
+        "extTotalS": 109.53,
+        "extAvgMs": 1610.8
+      },
+      {
+        "name": "sdoh",
+        "resources": 50,
+        "totalS": 0.88,
+        "avgMs": 17.6,
+        "zodTotalS": 0.12,
+        "zodAvgMs": 2.4,
+        "extTotalS": 89.48,
+        "extAvgMs": 2237.1
+      },
+      {
+        "name": "smart",
+        "resources": 18,
+        "totalS": 0.74,
+        "avgMs": 41,
+        "zodTotalS": 0.03,
+        "zodAvgMs": 1.4,
+        "extTotalS": 44.72,
+        "extAvgMs": 3726.3
+      },
+      {
+        "name": "us-core",
+        "resources": 164,
+        "totalS": 1.2,
+        "avgMs": 7.3,
+        "zodTotalS": 0.24,
+        "zodAvgMs": 1.4,
+        "extTotalS": 161.09,
+        "extAvgMs": 1464.5
+      },
+      {
+        "name": "vitals",
+        "resources": 48,
+        "totalS": 0.23,
+        "avgMs": 4.9,
+        "zodTotalS": 0.07,
+        "zodAvgMs": 1.5,
+        "extTotalS": 39.81,
+        "extAvgMs": 1326.9
+      }
+    ]
+  },
+  "generationTiming": null,
+  "packages": [
+    {
+      "key": "ae-research",
+      "displayName": "Ae Research",
+      "icon": "📦",
+      "fhirPackage": "hl7.fhir.uv.ae-research-ig",
+      "version": "1.0.1",
+      "results": {
+        "empty": {
+          "passed": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "random": {
+          "passed": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 0,
+          "total": 1,
+          "pct": 0
+        }
+      },
+      "overallPct": 67
+    },
+    {
+      "key": "au-core",
+      "displayName": "Au Core",
+      "icon": "📦",
+      "fhirPackage": "hl7.fhir.au.core",
+      "version": "2.0.0",
+      "results": {
+        "empty": {
+          "passed": 13,
+          "total": 13,
+          "pct": 100
+        },
+        "random": {
+          "passed": 20,
+          "total": 20,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 16,
+          "total": 20,
+          "pct": 80
+        }
+      },
+      "overallPct": 93
+    },
+    {
+      "key": "carin-bb",
+      "displayName": "Carin Bb",
+      "icon": "📦",
+      "fhirPackage": "hl7.fhir.us.carin-bb",
+      "version": "2.2.0",
+      "results": {
+        "empty": {
+          "passed": 16,
+          "total": 16,
+          "pct": 100
+        },
+        "random": {
+          "passed": 16,
+          "total": 16,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 6,
+          "total": 16,
+          "pct": 38
+        }
+      },
+      "overallPct": 79
+    },
+    {
+      "key": "ch-core",
+      "displayName": "CH Core",
+      "icon": "🇨🇭",
+      "fhirPackage": "ch.fhir.ig.ch-core",
+      "version": "6.0.0",
+      "results": {
+        "empty": {
+          "passed": 28,
+          "total": 28,
+          "pct": 100
+        },
+        "random": {
+          "passed": 29,
+          "total": 29,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 29,
+          "total": 29,
+          "pct": 100
+        }
+      },
+      "overallPct": 100
+    },
+    {
+      "key": "cpg",
+      "displayName": "Cpg",
+      "icon": "📦",
+      "fhirPackage": "hl7.fhir.uv.cpg",
+      "version": "2.0.0",
+      "results": {
+        "empty": {
+          "passed": 96,
+          "total": 96,
+          "pct": 100
+        },
+        "random": {
+          "passed": 98,
+          "total": 98,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 93,
+          "total": 98,
+          "pct": 95
+        }
+      },
+      "overallPct": 98
+    },
+    {
+      "key": "cqfmeasures",
+      "displayName": "Cqfmeasures",
+      "icon": "📦",
+      "fhirPackage": "hl7.fhir.us.cqfmeasures",
+      "version": "5.0.0",
+      "results": {
+        "empty": {
+          "passed": 12,
+          "total": 12,
+          "pct": 100
+        },
+        "random": {
+          "passed": 12,
+          "total": 12,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 6,
+          "total": 12,
+          "pct": 50
+        }
+      },
+      "overallPct": 83
+    },
+    {
+      "key": "davinci-alerts",
+      "displayName": "Davinci Alerts",
+      "icon": "📦",
+      "fhirPackage": "hl7.fhir.us.davinci-alerts",
+      "version": "1.1.0",
+      "results": {
+        "empty": {
+          "passed": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "random": {
+          "passed": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 1,
+          "total": 8,
+          "pct": 13
+        }
+      },
+      "overallPct": 71
+    },
+    {
+      "key": "davinci-cdex",
+      "displayName": "Davinci Cdex",
+      "icon": "📦",
+      "fhirPackage": "hl7.fhir.us.davinci-cdex",
+      "version": "2.1.0",
+      "results": {
+        "empty": {
+          "passed": 7,
+          "total": 7,
+          "pct": 100
+        },
+        "random": {
+          "passed": 7,
+          "total": 7,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 2,
+          "total": 7,
+          "pct": 29
+        }
+      },
+      "overallPct": 76
+    },
+    {
+      "key": "davinci-deqm",
+      "displayName": "Davinci Deqm",
+      "icon": "📦",
+      "fhirPackage": "hl7.fhir.us.davinci-deqm",
+      "version": "5.0.0",
+      "results": {
+        "empty": {
+          "passed": 11,
+          "total": 11,
+          "pct": 100
+        },
+        "random": {
+          "passed": 11,
+          "total": 11,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 5,
+          "total": 11,
+          "pct": 45
+        }
+      },
+      "overallPct": 82
+    },
+    {
+      "key": "davinci-drug-formulary",
+      "displayName": "Davinci Drug Formulary",
+      "icon": "📦",
+      "fhirPackage": "hl7.fhir.us.davinci-drug-formulary",
+      "version": "2.1.0",
+      "results": {
+        "empty": {
+          "passed": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "random": {
+          "passed": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 5,
+          "total": 8,
+          "pct": 63
+        }
+      },
+      "overallPct": 88
+    },
+    {
+      "key": "davinci-dtr",
+      "displayName": "Davinci Dtr",
+      "icon": "📦",
+      "fhirPackage": "hl7.fhir.us.davinci-dtr",
+      "version": "2.2.0",
+      "results": {
+        "empty": {
+          "passed": 14,
+          "total": 14,
+          "pct": 100
+        },
+        "random": {
+          "passed": 14,
+          "total": 14,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 2,
+          "total": 14,
+          "pct": 14
+        }
+      },
+      "overallPct": 71
+    },
+    {
+      "key": "davinci-pas",
+      "displayName": "Davinci Pas",
+      "icon": "📦",
+      "fhirPackage": "hl7.fhir.us.davinci-pas",
+      "version": "2.2.1",
+      "results": {
+        "empty": {
+          "passed": 29,
+          "total": 29,
+          "pct": 100
+        },
+        "random": {
+          "passed": 29,
+          "total": 29,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 20,
+          "total": 29,
+          "pct": 69
+        }
+      },
+      "overallPct": 90
+    },
+    {
+      "key": "davinci-pdex",
+      "displayName": "Davinci Pdex",
+      "icon": "📦",
+      "fhirPackage": "hl7.fhir.us.davinci-pdex",
+      "version": "2.1.0",
+      "results": {
+        "empty": {
+          "passed": 13,
+          "total": 13,
+          "pct": 100
+        },
+        "random": {
+          "passed": 13,
+          "total": 13,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 10,
+          "total": 13,
+          "pct": 77
+        }
+      },
+      "overallPct": 92
+    },
+    {
+      "key": "de-basisprofil",
+      "displayName": "De Basisprofil",
+      "icon": "📦",
+      "fhirPackage": "de.basisprofil.r4",
+      "version": "1.6.0",
+      "results": {
+        "empty": {
+          "passed": 9,
+          "total": 9,
+          "pct": 100
+        },
+        "random": {
+          "passed": 19,
+          "total": 19,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 8,
+          "total": 19,
+          "pct": 42
+        }
+      },
+      "overallPct": 81
+    },
+    {
+      "key": "emedicinal-product",
+      "displayName": "Emedicinal Product",
+      "icon": "📦",
+      "fhirPackage": "hl7.fhir.uv.emedicinal-product-info",
+      "version": "1.0.0",
+      "results": {
+        "empty": {
+          "passed": 15,
+          "total": 15,
+          "pct": 100
+        },
+        "random": {
+          "passed": 15,
+          "total": 15,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 11,
+          "total": 15,
+          "pct": 73
+        }
+      },
+      "overallPct": 91
+    },
+    {
+      "key": "genomics-reporting",
+      "displayName": "Genomics Reporting",
+      "icon": "📦",
+      "fhirPackage": "hl7.fhir.uv.genomics-reporting",
+      "version": "3.0.0",
+      "results": {
+        "empty": {
+          "passed": 17,
+          "total": 17,
+          "pct": 100
+        },
+        "random": {
+          "passed": 17,
+          "total": 17,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 16,
+          "total": 17,
+          "pct": 94
+        }
+      },
+      "overallPct": 98
+    },
+    {
+      "key": "ips",
+      "displayName": "IPS",
+      "icon": "🌍",
+      "fhirPackage": "hl7.fhir.uv.ips",
+      "version": "2.0.1",
+      "results": {
+        "empty": {
+          "passed": 27,
+          "total": 27,
+          "pct": 100
+        },
+        "random": {
+          "passed": 27,
+          "total": 27,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 27,
+          "total": 27,
+          "pct": 100
+        }
+      },
+      "overallPct": 100
+    },
+    {
+      "key": "isik-basis",
+      "displayName": "ISiK Basis",
+      "icon": "🇩🇪",
+      "fhirPackage": "de.gematik.isik-basismodul",
+      "version": "4.0.3",
+      "results": {
+        "empty": {
+          "passed": 25,
+          "total": 25,
+          "pct": 100
+        },
+        "random": {
+          "passed": 23,
+          "total": 25,
+          "pct": 92
+        },
+        "validation": {
+          "passed": 23,
+          "total": 25,
+          "pct": 92
+        }
+      },
+      "overallPct": 95
+    },
+    {
+      "key": "isik-medikation",
+      "displayName": "Isik Medikation",
+      "icon": "📦",
+      "fhirPackage": "de.gematik.isik-medikation",
+      "version": "4.0.3",
+      "results": {
+        "empty": {
+          "passed": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "random": {
+          "passed": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 8,
+          "total": 8,
+          "pct": 100
+        }
+      },
+      "overallPct": 100
+    },
+    {
+      "key": "kbv-erp",
+      "displayName": "Kbv Erp",
+      "icon": "📦",
+      "fhirPackage": "kbv.ita.erp",
+      "version": "1.4.4",
+      "results": {
+        "empty": {
+          "passed": 7,
+          "total": 7,
+          "pct": 100
+        },
+        "random": {
+          "passed": 6,
+          "total": 7,
+          "pct": 86
+        },
+        "validation": {
+          "passed": 0,
+          "total": 7,
+          "pct": 0
+        }
+      },
+      "overallPct": 62
+    },
+    {
+      "key": "mcode",
+      "displayName": "Mcode",
+      "icon": "📦",
+      "fhirPackage": "hl7.fhir.us.mcode",
+      "version": "4.0.0",
+      "results": {
+        "empty": {
+          "passed": 37,
+          "total": 37,
+          "pct": 100
+        },
+        "random": {
+          "passed": 38,
+          "total": 38,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 31,
+          "total": 38,
+          "pct": 82
+        }
+      },
+      "overallPct": 94
+    },
+    {
+      "key": "mhd",
+      "displayName": "Mhd",
+      "icon": "📦",
+      "fhirPackage": "ihe.iti.mhd",
+      "version": "4.2.4",
+      "results": {
+        "empty": {
+          "passed": 31,
+          "total": 31,
+          "pct": 100
+        },
+        "random": {
+          "passed": 31,
+          "total": 31,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 11,
+          "total": 31,
+          "pct": 35
+        }
+      },
+      "overallPct": 78
+    },
+    {
+      "key": "ndh",
+      "displayName": "Ndh",
+      "icon": "📦",
+      "fhirPackage": "hl7.fhir.us.ndh",
+      "version": "1.0.0",
+      "results": {
+        "empty": {
+          "passed": 31,
+          "total": 31,
+          "pct": 100
+        },
+        "random": {
+          "passed": 31,
+          "total": 31,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 23,
+          "total": 31,
+          "pct": 74
+        }
+      },
+      "overallPct": 91
+    },
+    {
+      "key": "physical-activity",
+      "displayName": "Physical Activity",
+      "icon": "📦",
+      "fhirPackage": "hl7.fhir.us.physical-activity",
+      "version": "1.0.0",
+      "results": {
+        "empty": {
+          "passed": 16,
+          "total": 16,
+          "pct": 100
+        },
+        "random": {
+          "passed": 16,
+          "total": 16,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 14,
+          "total": 16,
+          "pct": 88
+        }
+      },
+      "overallPct": 96
+    },
+    {
+      "key": "pixm",
+      "displayName": "Pixm",
+      "icon": "📦",
+      "fhirPackage": "ihe.iti.pixm",
+      "version": "3.1.0",
+      "results": {
+        "empty": {
+          "passed": 11,
+          "total": 11,
+          "pct": 100
+        },
+        "random": {
+          "passed": 11,
+          "total": 11,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 4,
+          "total": 11,
+          "pct": 36
+        }
+      },
+      "overallPct": 79
+    },
+    {
+      "key": "qicore",
+      "displayName": "Qicore",
+      "icon": "📦",
+      "fhirPackage": "hl7.fhir.us.qicore",
+      "version": "7.0.2",
+      "results": {
+        "empty": {
+          "passed": 65,
+          "total": 65,
+          "pct": 100
+        },
+        "random": {
+          "passed": 65,
+          "total": 65,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 58,
+          "total": 65,
+          "pct": 89
+        }
+      },
+      "overallPct": 96
+    },
+    {
+      "key": "sdc",
+      "displayName": "Sdc",
+      "icon": "📦",
+      "fhirPackage": "hl7.fhir.uv.sdc",
+      "version": "4.0.0",
+      "results": {
+        "empty": {
+          "passed": 34,
+          "total": 34,
+          "pct": 100
+        },
+        "random": {
+          "passed": 34,
+          "total": 34,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 20,
+          "total": 34,
+          "pct": 59
+        }
+      },
+      "overallPct": 86
+    },
+    {
+      "key": "sdoh",
+      "displayName": "Sdoh",
+      "icon": "📦",
+      "fhirPackage": "hl7.fhir.us.sdoh-clinicalcare",
+      "version": "2.3.0",
+      "results": {
+        "empty": {
+          "passed": 20,
+          "total": 20,
+          "pct": 100
+        },
+        "random": {
+          "passed": 20,
+          "total": 20,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 18,
+          "total": 20,
+          "pct": 90
+        }
+      },
+      "overallPct": 97
+    },
+    {
+      "key": "smart",
+      "displayName": "SMART",
+      "icon": "🔐",
+      "fhirPackage": "hl7.fhir.uv.smart-app-launch",
+      "version": "2.2.0",
+      "results": {
+        "empty": {
+          "passed": 6,
+          "total": 6,
+          "pct": 100
+        },
+        "random": {
+          "passed": 6,
+          "total": 6,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 6,
+          "total": 6,
+          "pct": 100
+        }
+      },
+      "overallPct": 100
+    },
+    {
+      "key": "us-core",
+      "displayName": "US Core",
+      "icon": "🇺🇸",
+      "fhirPackage": "hl7.fhir.us.core",
+      "version": "9.0.0",
+      "results": {
+        "empty": {
+          "passed": 41,
+          "total": 41,
+          "pct": 100
+        },
+        "random": {
+          "passed": 54,
+          "total": 54,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 54,
+          "total": 54,
+          "pct": 100
+        }
+      },
+      "overallPct": 100
+    },
+    {
+      "key": "vitals",
+      "displayName": "Vitals",
+      "icon": "📦",
+      "fhirPackage": "hl7.fhir.us.vitals",
+      "version": "1.0.0",
+      "results": {
+        "empty": {
+          "passed": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "random": {
+          "passed": 15,
+          "total": 15,
+          "pct": 100
+        },
+        "validation": {
+          "passed": 9,
+          "total": 15,
+          "pct": 60
+        }
+      },
+      "overallPct": 87
+    }
+  ]
+}
