@@ -1,5 +1,5 @@
 # smart - Detailed Report (FHIR all)
-Generated: 2026-09-05T11:25:12.470Z
+Generated: 2026-09-05T11:32:01.796Z
 
 Package: `hl7.fhir.uv.smart-app-launch@2.2.0`
 FHIR Release: all
