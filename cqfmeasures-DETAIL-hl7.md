@@ -1,5 +1,5 @@
 # cqfmeasures - Detailed Report (FHIR all)
-Generated: 2026-09-04T19:59:36.649Z
+Generated: 2026-09-04T20:44:56.237Z
 
 Package: `hl7.fhir.us.cqfmeasures@5.0.0`
 FHIR Release: all

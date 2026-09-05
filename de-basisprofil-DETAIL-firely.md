@@ -1,5 +1,5 @@
 # de-basisprofil - Detailed Report (FHIR all)
-Generated: 2026-09-04T19:50:54.275Z
+Generated: 2026-09-05T11:25:10.824Z
 
 Package: `de.basisprofil.r4@1.6.0`
 FHIR Release: all

@@ -1,5 +1,5 @@
 # physical-activity - Detailed Report (FHIR all)
-Generated: 2026-09-04T19:55:36.575Z
+Generated: 2026-09-05T11:25:24.029Z
 
 Package: `hl7.fhir.us.physical-activity@1.0.0`
 FHIR Release: all

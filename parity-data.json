@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-04T20:37:53.202Z",
+  "generated": "2026-09-05T11:27:17.178Z",
   "babelfhirVersion": "1.6.12",
   "fhirRelease": "R4",
   "validator": "Firely SDK Validator",
@@ -618,319 +618,319 @@
   },
   "timing": {
     "totalResources": 3196,
-    "totalS": 26.49,
-    "totalZodS": 4.11,
-    "totalExtS": 1545.63,
+    "totalS": 26.99,
+    "totalZodS": 4.46,
+    "totalExtS": 1522.11,
     "packages": [
       {
         "name": "ae-research",
         "resources": 10,
-        "totalS": 0.13,
-        "avgMs": 12.9,
-        "zodTotalS": 0.03,
-        "zodAvgMs": 2.7,
-        "extTotalS": 26.98,
-        "extAvgMs": 13488
+        "totalS": 0.12,
+        "avgMs": 12.5,
+        "zodTotalS": 0.02,
+        "zodAvgMs": 2,
+        "extTotalS": 28.89,
+        "extAvgMs": 14447.5
       },
       {
         "name": "au-core",
         "resources": 120,
-        "totalS": 1.04,
-        "avgMs": 8.6,
-        "zodTotalS": 0.16,
-        "zodAvgMs": 1.3,
-        "extTotalS": 43.2,
-        "extAvgMs": 863.9
+        "totalS": 1.06,
+        "avgMs": 8.8,
+        "zodTotalS": 0.17,
+        "zodAvgMs": 1.4,
+        "extTotalS": 38,
+        "extAvgMs": 760
       },
       {
         "name": "carin-bb",
         "resources": 44,
-        "totalS": 0.87,
-        "avgMs": 19.7,
-        "zodTotalS": 0.12,
-        "zodAvgMs": 2.6,
-        "extTotalS": 37.93,
-        "extAvgMs": 1185.4
+        "totalS": 1.37,
+        "avgMs": 31.2,
+        "zodTotalS": 0.17,
+        "zodAvgMs": 3.8,
+        "extTotalS": 30.47,
+        "extAvgMs": 952.1
       },
       {
         "name": "ch-core",
         "resources": 176,
-        "totalS": 1.26,
-        "avgMs": 7.2,
+        "totalS": 1.3,
+        "avgMs": 7.4,
         "zodTotalS": 0.18,
         "zodAvgMs": 1,
-        "extTotalS": 43.8,
-        "extAvgMs": 755.2
+        "extTotalS": 39.04,
+        "extAvgMs": 673.1
       },
       {
         "name": "cpg",
         "resources": 264,
-        "totalS": 0.76,
-        "avgMs": 2.9,
-        "zodTotalS": 0.32,
-        "zodAvgMs": 1.2,
-        "extTotalS": 64.71,
-        "extAvgMs": 326.8
+        "totalS": 1.01,
+        "avgMs": 3.8,
+        "zodTotalS": 0.44,
+        "zodAvgMs": 1.7,
+        "extTotalS": 65.33,
+        "extAvgMs": 330
       },
       {
         "name": "cqfmeasures",
         "resources": 88,
-        "totalS": 0.6,
-        "avgMs": 6.8,
-        "zodTotalS": 0.14,
-        "zodAvgMs": 1.6,
-        "extTotalS": 29.17,
-        "extAvgMs": 1121.8
+        "totalS": 0.73,
+        "avgMs": 8.3,
+        "zodTotalS": 0.15,
+        "zodAvgMs": 1.7,
+        "extTotalS": 30.77,
+        "extAvgMs": 1183.6
       },
       {
         "name": "davinci-alerts",
         "resources": 20,
-        "totalS": 0.21,
-        "avgMs": 10.3,
+        "totalS": 0.2,
+        "avgMs": 10.1,
         "zodTotalS": 0.04,
         "zodAvgMs": 2.1,
-        "extTotalS": 64.26,
-        "extAvgMs": 4016.1
+        "extTotalS": 68.22,
+        "extAvgMs": 4263.7
       },
       {
         "name": "davinci-cdex",
         "resources": 30,
-        "totalS": 0.27,
-        "avgMs": 9,
-        "zodTotalS": 0.09,
-        "zodAvgMs": 2.9,
-        "extTotalS": 90.11,
-        "extAvgMs": 6436.1
+        "totalS": 0.28,
+        "avgMs": 9.4,
+        "zodTotalS": 0.1,
+        "zodAvgMs": 3.2,
+        "extTotalS": 92.2,
+        "extAvgMs": 6585.6
       },
       {
         "name": "davinci-deqm",
         "resources": 68,
-        "totalS": 0.36,
-        "avgMs": 5.3,
-        "zodTotalS": 0.05,
-        "zodAvgMs": 0.8,
-        "extTotalS": 58.2,
-        "extAvgMs": 2645.5
+        "totalS": 0.54,
+        "avgMs": 8,
+        "zodTotalS": 0.11,
+        "zodAvgMs": 1.6,
+        "extTotalS": 55.49,
+        "extAvgMs": 2522.5
       },
       {
         "name": "davinci-drug-formulary",
         "resources": 42,
-        "totalS": 0.71,
-        "avgMs": 16.9,
-        "zodTotalS": 0.08,
-        "zodAvgMs": 1.9,
-        "extTotalS": 42.22,
-        "extAvgMs": 2638.9
+        "totalS": 0.44,
+        "avgMs": 10.6,
+        "zodTotalS": 0.06,
+        "zodAvgMs": 1.5,
+        "extTotalS": 52.85,
+        "extAvgMs": 3303.3
       },
       {
         "name": "davinci-dtr",
         "resources": 192,
-        "totalS": 1.54,
-        "avgMs": 8,
+        "totalS": 1.98,
+        "avgMs": 10.3,
         "zodTotalS": 0.15,
         "zodAvgMs": 0.8,
-        "extTotalS": 57.05,
-        "extAvgMs": 2037.4
+        "extTotalS": 62.38,
+        "extAvgMs": 2228
       },
       {
         "name": "davinci-pas",
         "resources": 194,
-        "totalS": 1.89,
-        "avgMs": 9.7,
-        "zodTotalS": 0.22,
-        "zodAvgMs": 1.1,
-        "extTotalS": 58.41,
-        "extAvgMs": 1007.1
+        "totalS": 1.93,
+        "avgMs": 10,
+        "zodTotalS": 0.24,
+        "zodAvgMs": 1.2,
+        "extTotalS": 55.59,
+        "extAvgMs": 958.4
       },
       {
         "name": "davinci-pdex",
         "resources": 118,
-        "totalS": 0.44,
-        "avgMs": 3.7,
-        "zodTotalS": 0.1,
+        "totalS": 0.38,
+        "avgMs": 3.2,
+        "zodTotalS": 0.09,
         "zodAvgMs": 0.8,
-        "extTotalS": 39.82,
-        "extAvgMs": 1531.5
+        "extTotalS": 43.03,
+        "extAvgMs": 1654.9
       },
       {
         "name": "de-basisprofil",
         "resources": 170,
-        "totalS": 0.91,
-        "avgMs": 5.3,
-        "zodTotalS": 0.18,
-        "zodAvgMs": 1.1,
-        "extTotalS": 36.42,
-        "extAvgMs": 958.5
+        "totalS": 0.62,
+        "avgMs": 3.6,
+        "zodTotalS": 0.14,
+        "zodAvgMs": 0.8,
+        "extTotalS": 36.33,
+        "extAvgMs": 955.9
       },
       {
         "name": "emedicinal-product",
         "resources": 30,
-        "totalS": 0.18,
-        "avgMs": 6,
-        "zodTotalS": 0.05,
-        "zodAvgMs": 1.7,
-        "extTotalS": 33.92,
-        "extAvgMs": 1130.6
+        "totalS": 0.31,
+        "avgMs": 10.5,
+        "zodTotalS": 0.08,
+        "zodAvgMs": 2.8,
+        "extTotalS": 31.08,
+        "extAvgMs": 1035.9
       },
       {
         "name": "genomics-reporting",
         "resources": 96,
-        "totalS": 0.44,
-        "avgMs": 4.6,
-        "zodTotalS": 0.14,
-        "zodAvgMs": 1.4,
-        "extTotalS": 36.69,
-        "extAvgMs": 1079.2
+        "totalS": 0.39,
+        "avgMs": 4,
+        "zodTotalS": 0.11,
+        "zodAvgMs": 1.2,
+        "extTotalS": 33.06,
+        "extAvgMs": 972.4
       },
       {
         "name": "ips",
         "resources": 76,
-        "totalS": 0.44,
-        "avgMs": 5.8,
-        "zodTotalS": 0.16,
-        "zodAvgMs": 2.1,
-        "extTotalS": 43.48,
-        "extAvgMs": 805.1
+        "totalS": 0.45,
+        "avgMs": 5.9,
+        "zodTotalS": 0.14,
+        "zodAvgMs": 1.9,
+        "extTotalS": 38.17,
+        "extAvgMs": 706.9
       },
       {
         "name": "isik-basis",
         "resources": 126,
-        "totalS": 2.5,
-        "avgMs": 19.8,
-        "zodTotalS": 0.14,
-        "zodAvgMs": 1.1,
-        "extTotalS": 32.09,
-        "extAvgMs": 573.1
+        "totalS": 1.61,
+        "avgMs": 12.8,
+        "zodTotalS": 0.16,
+        "zodAvgMs": 1.3,
+        "extTotalS": 36.89,
+        "extAvgMs": 658.7
       },
       {
         "name": "isik-medikation",
         "resources": 32,
-        "totalS": 1.92,
-        "avgMs": 59.9,
+        "totalS": 1.41,
+        "avgMs": 43.9,
         "zodTotalS": 0.04,
         "zodAvgMs": 1.4,
-        "extTotalS": 29.18,
-        "extAvgMs": 1823.8
+        "extTotalS": 22.13,
+        "extAvgMs": 1383
       },
       {
         "name": "kbv-erp",
         "resources": 64,
-        "totalS": 1.31,
-        "avgMs": 20.5,
-        "zodTotalS": 0.08,
-        "zodAvgMs": 1.3,
-        "extTotalS": 44.16,
-        "extAvgMs": 2760
+        "totalS": 1.42,
+        "avgMs": 22.2,
+        "zodTotalS": 0.09,
+        "zodAvgMs": 1.4,
+        "extTotalS": 45.08,
+        "extAvgMs": 2817.4
       },
       {
         "name": "mcode",
         "resources": 142,
-        "totalS": 0.76,
-        "avgMs": 5.4,
-        "zodTotalS": 0.18,
+        "totalS": 0.8,
+        "avgMs": 5.6,
+        "zodTotalS": 0.17,
         "zodAvgMs": 1.2,
-        "extTotalS": 73.27,
-        "extAvgMs": 964
+        "extTotalS": 71.27,
+        "extAvgMs": 937.7
       },
       {
         "name": "mhd",
         "resources": 78,
-        "totalS": 0.97,
-        "avgMs": 12.5,
-        "zodTotalS": 0.17,
-        "zodAvgMs": 2.2,
-        "extTotalS": 49.57,
-        "extAvgMs": 799.5
+        "totalS": 1.02,
+        "avgMs": 13.1,
+        "zodTotalS": 0.16,
+        "zodAvgMs": 2,
+        "extTotalS": 41.78,
+        "extAvgMs": 673.8
       },
       {
         "name": "ndh",
         "resources": 176,
-        "totalS": 0.83,
+        "totalS": 0.84,
         "avgMs": 4.7,
         "zodTotalS": 0.18,
         "zodAvgMs": 1,
-        "extTotalS": 44.36,
-        "extAvgMs": 715.5
+        "extTotalS": 38.38,
+        "extAvgMs": 619
       },
       {
         "name": "physical-activity",
         "resources": 38,
-        "totalS": 0.56,
-        "avgMs": 14.8,
+        "totalS": 0.6,
+        "avgMs": 15.9,
         "zodTotalS": 0.11,
-        "zodAvgMs": 2.8,
-        "extTotalS": 58.7,
-        "extAvgMs": 1834.3
+        "zodAvgMs": 2.9,
+        "extTotalS": 52.53,
+        "extAvgMs": 1641.5
       },
       {
         "name": "pixm",
         "resources": 30,
-        "totalS": 0.26,
-        "avgMs": 8.5,
-        "zodTotalS": 0.08,
-        "zodAvgMs": 2.6,
-        "extTotalS": 36.93,
-        "extAvgMs": 1678.5
+        "totalS": 0.18,
+        "avgMs": 6.1,
+        "zodTotalS": 0.05,
+        "zodAvgMs": 1.6,
+        "extTotalS": 41.75,
+        "extAvgMs": 1897.5
       },
       {
         "name": "qicore",
         "resources": 172,
-        "totalS": 1.22,
-        "avgMs": 7.1,
-        "zodTotalS": 0.28,
-        "zodAvgMs": 1.6,
-        "extTotalS": 81.24,
-        "extAvgMs": 624.9
+        "totalS": 0.98,
+        "avgMs": 5.7,
+        "zodTotalS": 0.34,
+        "zodAvgMs": 2,
+        "extTotalS": 83.34,
+        "extAvgMs": 641.1
       },
       {
         "name": "sdc",
         "resources": 320,
-        "totalS": 1.85,
-        "avgMs": 5.8,
-        "zodTotalS": 0.19,
-        "zodAvgMs": 0.6,
-        "extTotalS": 66.37,
-        "extAvgMs": 976
+        "totalS": 2.04,
+        "avgMs": 6.4,
+        "zodTotalS": 0.26,
+        "zodAvgMs": 0.8,
+        "extTotalS": 66.96,
+        "extAvgMs": 984.7
       },
       {
         "name": "sdoh",
         "resources": 50,
-        "totalS": 0.64,
-        "avgMs": 12.8,
-        "zodTotalS": 0.13,
-        "zodAvgMs": 2.6,
-        "extTotalS": 54.15,
-        "extAvgMs": 1353.8
+        "totalS": 0.94,
+        "avgMs": 18.7,
+        "zodTotalS": 0.12,
+        "zodAvgMs": 2.4,
+        "extTotalS": 51.34,
+        "extAvgMs": 1283.6
       },
       {
         "name": "smart",
         "resources": 18,
-        "totalS": 0.33,
-        "avgMs": 18.4,
-        "zodTotalS": 0.05,
-        "zodAvgMs": 2.6,
-        "extTotalS": 26.89,
-        "extAvgMs": 2240.9
+        "totalS": 0.55,
+        "avgMs": 30.6,
+        "zodTotalS": 0.04,
+        "zodAvgMs": 2.4,
+        "extTotalS": 32.06,
+        "extAvgMs": 2671.3
       },
       {
         "name": "us-core",
         "resources": 164,
-        "totalS": 1,
-        "avgMs": 6.1,
-        "zodTotalS": 0.19,
-        "zodAvgMs": 1.2,
-        "extTotalS": 110.89,
-        "extAvgMs": 1008.1
+        "totalS": 1.22,
+        "avgMs": 7.5,
+        "zodTotalS": 0.26,
+        "zodAvgMs": 1.6,
+        "extTotalS": 107.6,
+        "extAvgMs": 978.2
       },
       {
         "name": "vitals",
         "resources": 48,
-        "totalS": 0.29,
-        "avgMs": 6.1,
-        "zodTotalS": 0.08,
-        "zodAvgMs": 1.7,
-        "extTotalS": 31.46,
-        "extAvgMs": 1048.6
+        "totalS": 0.27,
+        "avgMs": 5.6,
+        "zodTotalS": 0.09,
+        "zodAvgMs": 1.8,
+        "extTotalS": 30.1,
+        "extAvgMs": 1003.5
       }
     ]
   },

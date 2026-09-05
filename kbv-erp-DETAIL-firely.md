@@ -1,5 +1,5 @@
 # kbv-erp - Detailed Report (FHIR all)
-Generated: 2026-09-04T19:54:51.002Z
+Generated: 2026-09-05T11:25:26.670Z
 
 Package: `kbv.ita.erp@1.4.4`
 FHIR Release: all

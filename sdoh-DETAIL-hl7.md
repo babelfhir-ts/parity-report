@@ -1,5 +1,5 @@
 # sdoh - Detailed Report (FHIR all)
-Generated: 2026-09-04T19:59:24.936Z
+Generated: 2026-09-04T20:55:03.326Z
 
 Package: `hl7.fhir.us.sdoh-clinicalcare@2.3.0`
 FHIR Release: all

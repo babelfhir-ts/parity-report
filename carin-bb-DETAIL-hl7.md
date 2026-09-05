@@ -1,5 +1,5 @@
 # carin-bb - Detailed Report (FHIR all)
-Generated: 2026-09-04T20:02:41.206Z
+Generated: 2026-09-05T11:26:18.066Z
 
 Package: `hl7.fhir.us.carin-bb@2.2.0`
 FHIR Release: all

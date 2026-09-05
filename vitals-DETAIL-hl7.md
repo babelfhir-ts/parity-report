@@ -1,5 +1,5 @@
 # vitals - Detailed Report (FHIR all)
-Generated: 2026-09-04T19:57:24.900Z
+Generated: 2026-09-05T11:25:00.667Z
 
 Package: `hl7.fhir.us.vitals@1.0.0`
 FHIR Release: all
