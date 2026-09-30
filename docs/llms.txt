@@ -1,0 +1,31 @@
+# BabelFHIR-TS
+
+> FHIR to TypeScript, done right
+
+Generate profile-aware TypeScript interfaces, validators, and a type-safe FHIR client from any Implementation Guide.
+
+## Table of Contents
+
+### Introduction
+
+- [Getting Started — BabelFHIR-TS](/parity-report/docs/getting-started.md): Install BabelFHIR-TS, run your first code generation from a FHIR Implementation Guide, and start using the generated TypeScript interfaces, validators, and FHIR client.
+
+### Usage
+
+- [CLI Reference — BabelFHIR-TS](/parity-report/docs/cli-reference.md): Complete reference for the babelfhir-ts CLI — all commands, flags, supported input types, output options, caching, and registry configuration.
+- [Generated Code Guide — BabelFHIR-TS](/parity-report/docs/generated-code.md): Understand the TypeScript output produced by BabelFHIR-TS — module structure, interfaces, validators, classes, ValueSet helpers, and how to import generated code.
+- [ValueSet Helpers — BabelFHIR-TS](/parity-report/docs/valuesets.md): Generated typed ValueSet modules provide code unions, runtime validators, random pickers, and a central registry for every ValueSet binding in your FHIR Implementation Guide.
+- [FHIR Client — BabelFHIR-TS](/parity-report/docs/fhir-client.md): Use the generated type-safe FHIR client to interact with FHIR servers using profile-specific methods, SMART on FHIR auth, and full R4/R4B/R5 base resource coverage.
+- [Schema Generation (Zod) — BabelFHIR-TS](/parity-report/docs/schema-generation.md): Generate Zod schemas alongside TypeScript output for runtime type validation with choice type expansion, FHIR constraint refinements, and profile-aware validation.
+- [DICOMweb Integration — BabelFHIR-TS](/parity-report/docs/dicomweb.md): Generate typed DICOMweb helpers that bridge FHIR ImagingStudy profiles with DICOMweb APIs and Cornerstone3D viewers using the --dicomweb flag.
+- [Multi-Language Display Terms — BabelFHIR-TS](/parity-report/docs/i18n.md): Generate localized ValueSet display strings using a terminology server's $expand operation. Supports single and multi-language output with a getDisplay() helper map.
+
+### Advanced
+
+- [Validation — BabelFHIR-TS](/parity-report/docs/validation.md): How BabelFHIR-TS generates FHIRPath runtime validators from StructureDefinitions, what constraints are checked, parity testing against HL7 and Firely validators, and known limitations.
+- [Limitations — BabelFHIR-TS](/parity-report/docs/limitations.md): Known limitations of BabelFHIR-TS including unsupported FHIR profiling patterns, random() edge cases, FHIRPath coverage gaps, and how to report issues.
+
+### Development
+
+- [Contributing — BabelFHIR-TS](/parity-report/docs/contributing.md): Set up a local BabelFHIR-TS development environment, understand the project structure and generator pipeline, run tests, and submit pull requests.
+
