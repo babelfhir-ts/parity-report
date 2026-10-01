@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-01T10:40:57.670Z",
-  "babelfhirVersion": "1.6.16",
+  "generated": "2026-10-01T11:43:06.347Z",
+  "babelfhirVersion": "1.6.17",
   "fhirRelease": "R4",
   "validator": "HL7 Java Validator",
   "validatorVersion": "6.10.4",
   "reportUrl": "https://babelfhir-ts.github.io/parity-report/",
-  "excludedProfiles": 12,
+  "excludedProfiles": 13,
   "excludedDetails": [
     {
       "pkg": "au-core",
@@ -115,6 +115,16 @@
       "scope": "empty-parity, random-parity, random-validation",
       "error": "Profile KBV_PR_ERP_Bundle",
       "reason": "1.1.0 has no snapshot",
+      "source": "Excluded"
+    },
+    {
+      "pkg": "ndh",
+      "profile": "NdhPnLdApiPractitionerRoleClass",
+      "validator": "hl7",
+      "category": "SNOMED edition mismatch",
+      "scope": "random-parity, random-validation",
+      "error": "SNOMED code '453231000124104' not in International Edition",
+      "reason": "The HL7 validator uses SNOMED International Edition which does not include US Extension codes. The code is valid in US Edition but cannot be validated here.",
       "source": "Excluded"
     },
     {
@@ -334,319 +344,319 @@
   },
   "timing": {
     "totalResources": 3196,
-    "totalS": 25.06,
-    "totalZodS": 4.36,
-    "totalExtS": 4081.66,
+    "totalS": 34.48,
+    "totalZodS": 4.27,
+    "totalExtS": 3877.74,
     "packages": [
       {
         "name": "ae-research",
         "resources": 10,
-        "totalS": 0.14,
-        "avgMs": 13.6,
-        "zodTotalS": 0.02,
-        "zodAvgMs": 2.5,
-        "extTotalS": 39.01,
-        "extAvgMs": 19504
+        "totalS": 0.1,
+        "avgMs": 9.6,
+        "zodTotalS": 0.01,
+        "zodAvgMs": 1.4,
+        "extTotalS": 41.44,
+        "extAvgMs": 20717.5
       },
       {
         "name": "au-core",
         "resources": 120,
-        "totalS": 0.97,
-        "avgMs": 8,
-        "zodTotalS": 0.11,
-        "zodAvgMs": 0.9,
-        "extTotalS": 84.65,
-        "extAvgMs": 1693
+        "totalS": 0.65,
+        "avgMs": 5.4,
+        "zodTotalS": 0.12,
+        "zodAvgMs": 1,
+        "extTotalS": 90.75,
+        "extAvgMs": 1815
       },
       {
         "name": "carin-bb",
         "resources": 44,
         "totalS": 1.52,
         "avgMs": 34.5,
-        "zodTotalS": 0.12,
-        "zodAvgMs": 2.7,
-        "extTotalS": 109.48,
-        "extAvgMs": 3421.2
+        "zodTotalS": 0.17,
+        "zodAvgMs": 3.8,
+        "extTotalS": 137.02,
+        "extAvgMs": 4282
       },
       {
         "name": "ch-core",
         "resources": 176,
-        "totalS": 1.35,
-        "avgMs": 7.7,
-        "zodTotalS": 0.2,
-        "zodAvgMs": 1.1,
-        "extTotalS": 98.6,
-        "extAvgMs": 1699.9
+        "totalS": 3.92,
+        "avgMs": 22.3,
+        "zodTotalS": 0.16,
+        "zodAvgMs": 0.9,
+        "extTotalS": 93.23,
+        "extAvgMs": 1607.4
       },
       {
         "name": "cpg",
         "resources": 264,
         "totalS": 0.81,
         "avgMs": 3.1,
-        "zodTotalS": 0.35,
-        "zodAvgMs": 1.3,
-        "extTotalS": 194.66,
-        "extAvgMs": 983.1
+        "zodTotalS": 0.36,
+        "zodAvgMs": 1.4,
+        "extTotalS": 227.76,
+        "extAvgMs": 1150.3
       },
       {
         "name": "cqfmeasures",
         "resources": 88,
-        "totalS": 0.98,
-        "avgMs": 11.2,
-        "zodTotalS": 0.15,
-        "zodAvgMs": 1.7,
-        "extTotalS": 67.94,
-        "extAvgMs": 2613.1
+        "totalS": 0.7,
+        "avgMs": 7.9,
+        "zodTotalS": 0.16,
+        "zodAvgMs": 1.9,
+        "extTotalS": 67.35,
+        "extAvgMs": 2590.4
       },
       {
         "name": "davinci-alerts",
         "resources": 20,
-        "totalS": 0.17,
-        "avgMs": 8.3,
-        "zodTotalS": 0.03,
-        "zodAvgMs": 1.7,
-        "extTotalS": 96.97,
-        "extAvgMs": 6060.4
+        "totalS": 0.22,
+        "avgMs": 10.9,
+        "zodTotalS": 0.06,
+        "zodAvgMs": 2.8,
+        "extTotalS": 103.75,
+        "extAvgMs": 6484.4
       },
       {
         "name": "davinci-cdex",
         "resources": 30,
-        "totalS": 0.15,
-        "avgMs": 4.9,
-        "zodTotalS": 0.05,
-        "zodAvgMs": 1.6,
-        "extTotalS": 199.87,
-        "extAvgMs": 14276.7
+        "totalS": 0.17,
+        "avgMs": 5.6,
+        "zodTotalS": 0.06,
+        "zodAvgMs": 1.9,
+        "extTotalS": 155.98,
+        "extAvgMs": 11141.5
       },
       {
         "name": "davinci-deqm",
         "resources": 68,
-        "totalS": 0.52,
-        "avgMs": 7.7,
-        "zodTotalS": 0.08,
-        "zodAvgMs": 1.2,
-        "extTotalS": 114.21,
-        "extAvgMs": 5191.2
+        "totalS": 0.5,
+        "avgMs": 7.3,
+        "zodTotalS": 0.09,
+        "zodAvgMs": 1.3,
+        "extTotalS": 88.96,
+        "extAvgMs": 4043.6
       },
       {
         "name": "davinci-drug-formulary",
         "resources": 42,
-        "totalS": 0.5,
-        "avgMs": 11.9,
-        "zodTotalS": 0.08,
-        "zodAvgMs": 1.9,
-        "extTotalS": 103.16,
-        "extAvgMs": 6447.4
+        "totalS": 0.36,
+        "avgMs": 8.5,
+        "zodTotalS": 0.04,
+        "zodAvgMs": 1.1,
+        "extTotalS": 111.71,
+        "extAvgMs": 6982
       },
       {
         "name": "davinci-dtr",
         "resources": 192,
-        "totalS": 1.7,
-        "avgMs": 8.9,
-        "zodTotalS": 0.16,
+        "totalS": 1.36,
+        "avgMs": 7.1,
+        "zodTotalS": 0.15,
         "zodAvgMs": 0.8,
-        "extTotalS": 422.05,
-        "extAvgMs": 15073.3
+        "extTotalS": 209.62,
+        "extAvgMs": 7486.3
       },
       {
         "name": "davinci-pas",
         "resources": 194,
-        "totalS": 1.86,
-        "avgMs": 9.6,
-        "zodTotalS": 0.12,
-        "zodAvgMs": 0.6,
-        "extTotalS": 247.94,
-        "extAvgMs": 4274.9
+        "totalS": 2.06,
+        "avgMs": 10.6,
+        "zodTotalS": 0.17,
+        "zodAvgMs": 0.9,
+        "extTotalS": 209.8,
+        "extAvgMs": 3617.3
       },
       {
         "name": "davinci-pdex",
         "resources": 118,
-        "totalS": 0.51,
-        "avgMs": 4.3,
+        "totalS": 0.47,
+        "avgMs": 3.9,
         "zodTotalS": 0.11,
         "zodAvgMs": 0.9,
-        "extTotalS": 465.87,
-        "extAvgMs": 17918.1
+        "extTotalS": 447.61,
+        "extAvgMs": 17215.8
       },
       {
         "name": "de-basisprofil",
         "resources": 170,
         "totalS": 1.1,
         "avgMs": 6.5,
-        "zodTotalS": 0.21,
+        "zodTotalS": 0.22,
         "zodAvgMs": 1.3,
-        "extTotalS": 52.67,
-        "extAvgMs": 1386.2
+        "extTotalS": 52.59,
+        "extAvgMs": 1384
       },
       {
         "name": "emedicinal-product",
         "resources": 30,
-        "totalS": 0.32,
-        "avgMs": 10.7,
+        "totalS": 0.31,
+        "avgMs": 10.4,
         "zodTotalS": 0.08,
         "zodAvgMs": 2.8,
-        "extTotalS": 29.45,
-        "extAvgMs": 981.5
+        "extTotalS": 36.22,
+        "extAvgMs": 1207.4
       },
       {
         "name": "genomics-reporting",
         "resources": 96,
-        "totalS": 0.44,
-        "avgMs": 4.6,
-        "zodTotalS": 0.13,
+        "totalS": 0.4,
+        "avgMs": 4.1,
+        "zodTotalS": 0.12,
         "zodAvgMs": 1.3,
-        "extTotalS": 72.05,
-        "extAvgMs": 2119
+        "extTotalS": 71.79,
+        "extAvgMs": 2111.4
       },
       {
         "name": "ips",
         "resources": 76,
-        "totalS": 0.45,
-        "avgMs": 6,
-        "zodTotalS": 0.14,
-        "zodAvgMs": 1.9,
-        "extTotalS": 63.41,
-        "extAvgMs": 1174.2
+        "totalS": 0.47,
+        "avgMs": 6.2,
+        "zodTotalS": 0.17,
+        "zodAvgMs": 2.2,
+        "extTotalS": 54.48,
+        "extAvgMs": 1008.8
       },
       {
         "name": "isik-basis",
         "resources": 126,
-        "totalS": 1.11,
-        "avgMs": 8.8,
-        "zodTotalS": 0.16,
-        "zodAvgMs": 1.2,
-        "extTotalS": 35.98,
-        "extAvgMs": 642.5
+        "totalS": 1.64,
+        "avgMs": 13,
+        "zodTotalS": 0.17,
+        "zodAvgMs": 1.3,
+        "extTotalS": 47.23,
+        "extAvgMs": 843.4
       },
       {
         "name": "isik-medikation",
         "resources": 32,
-        "totalS": 1.13,
-        "avgMs": 35.4,
+        "totalS": 1.6,
+        "avgMs": 50,
         "zodTotalS": 0.04,
-        "zodAvgMs": 1.4,
-        "extTotalS": 50.1,
-        "extAvgMs": 3131.4
+        "zodAvgMs": 1.2,
+        "extTotalS": 58.25,
+        "extAvgMs": 3640.8
       },
       {
         "name": "kbv-erp",
         "resources": 64,
-        "totalS": 1.08,
-        "avgMs": 16.9,
+        "totalS": 3.08,
+        "avgMs": 48,
         "zodTotalS": 0.08,
-        "zodAvgMs": 1.2,
-        "extTotalS": 40.28,
-        "extAvgMs": 2517.8
+        "zodAvgMs": 1.3,
+        "extTotalS": 38.5,
+        "extAvgMs": 2406.3
       },
       {
         "name": "mcode",
         "resources": 142,
-        "totalS": 0.88,
-        "avgMs": 6.2,
-        "zodTotalS": 0.21,
-        "zodAvgMs": 1.5,
-        "extTotalS": 128.87,
-        "extAvgMs": 1695.6
+        "totalS": 0.79,
+        "avgMs": 5.6,
+        "zodTotalS": 0.2,
+        "zodAvgMs": 1.4,
+        "extTotalS": 116.87,
+        "extAvgMs": 1537.8
       },
       {
         "name": "mhd",
         "resources": 78,
-        "totalS": 0.82,
-        "avgMs": 10.5,
-        "zodTotalS": 0.2,
-        "zodAvgMs": 2.6,
-        "extTotalS": 182.75,
-        "extAvgMs": 2947.6
+        "totalS": 0.95,
+        "avgMs": 12.2,
+        "zodTotalS": 0.15,
+        "zodAvgMs": 2,
+        "extTotalS": 172.71,
+        "extAvgMs": 2785.7
       },
       {
         "name": "ndh",
         "resources": 176,
-        "totalS": 0.74,
-        "avgMs": 4.2,
-        "zodTotalS": 0.16,
-        "zodAvgMs": 0.9,
-        "extTotalS": 174.84,
-        "extAvgMs": 2820.1
+        "totalS": 0.79,
+        "avgMs": 4.5,
+        "zodTotalS": 0.17,
+        "zodAvgMs": 1,
+        "extTotalS": 225.05,
+        "extAvgMs": 3629.8
       },
       {
         "name": "physical-activity",
         "resources": 38,
-        "totalS": 0.55,
-        "avgMs": 14.6,
-        "zodTotalS": 0.1,
-        "zodAvgMs": 2.6,
-        "extTotalS": 58.01,
-        "extAvgMs": 1812.9
+        "totalS": 0.59,
+        "avgMs": 15.6,
+        "zodTotalS": 0.11,
+        "zodAvgMs": 2.8,
+        "extTotalS": 78.62,
+        "extAvgMs": 2457
       },
       {
         "name": "pixm",
         "resources": 30,
         "totalS": 0.29,
-        "avgMs": 9.6,
+        "avgMs": 9.8,
         "zodTotalS": 0.08,
         "zodAvgMs": 2.7,
-        "extTotalS": 44.42,
-        "extAvgMs": 2019
+        "extTotalS": 64.02,
+        "extAvgMs": 2910
       },
       {
         "name": "qicore",
         "resources": 172,
-        "totalS": 1.06,
-        "avgMs": 6.2,
-        "zodTotalS": 0.35,
-        "zodAvgMs": 2.1,
-        "extTotalS": 333.69,
-        "extAvgMs": 2566.8
+        "totalS": 1.28,
+        "avgMs": 7.4,
+        "zodTotalS": 0.34,
+        "zodAvgMs": 2,
+        "extTotalS": 285.42,
+        "extAvgMs": 2195.6
       },
       {
         "name": "sdc",
         "resources": 320,
-        "totalS": 1.14,
-        "avgMs": 3.6,
-        "zodTotalS": 0.23,
-        "zodAvgMs": 0.7,
-        "extTotalS": 120.9,
-        "extAvgMs": 1778
+        "totalS": 1.61,
+        "avgMs": 5,
+        "zodTotalS": 0.17,
+        "zodAvgMs": 0.5,
+        "extTotalS": 155.26,
+        "extAvgMs": 2283.2
       },
       {
         "name": "sdoh",
         "resources": 50,
-        "totalS": 0.9,
-        "avgMs": 18.1,
-        "zodTotalS": 0.12,
-        "zodAvgMs": 2.5,
-        "extTotalS": 122.09,
-        "extAvgMs": 3052.2
+        "totalS": 0.68,
+        "avgMs": 13.7,
+        "zodTotalS": 0.13,
+        "zodAvgMs": 2.7,
+        "extTotalS": 121.13,
+        "extAvgMs": 3028.3
       },
       {
         "name": "smart",
         "resources": 18,
-        "totalS": 0.34,
-        "avgMs": 19.1,
-        "zodTotalS": 0.04,
-        "zodAvgMs": 2.4,
-        "extTotalS": 33.4,
-        "extAvgMs": 2783.3
+        "totalS": 0.44,
+        "avgMs": 24.7,
+        "zodTotalS": 0.05,
+        "zodAvgMs": 2.9,
+        "extTotalS": 48.86,
+        "extAvgMs": 4071.5
       },
       {
         "name": "us-core",
         "resources": 164,
-        "totalS": 1.11,
-        "avgMs": 6.8,
-        "zodTotalS": 0.32,
-        "zodAvgMs": 1.9,
-        "extTotalS": 241.79,
-        "extAvgMs": 2198.1
+        "totalS": 5.25,
+        "avgMs": 32,
+        "zodTotalS": 0.23,
+        "zodAvgMs": 1.4,
+        "extTotalS": 224.36,
+        "extAvgMs": 2039.7
       },
       {
         "name": "vitals",
         "resources": 48,
-        "totalS": 0.42,
-        "avgMs": 8.8,
-        "zodTotalS": 0.13,
-        "zodAvgMs": 2.6,
-        "extTotalS": 52.55,
-        "extAvgMs": 1751.6
+        "totalS": 0.37,
+        "avgMs": 7.7,
+        "zodTotalS": 0.1,
+        "zodAvgMs": 2.1,
+        "extTotalS": 41.4,
+        "extAvgMs": 1380
       }
     ]
   },
@@ -1215,14 +1225,14 @@
           "pct": 100
         },
         "random": {
-          "passed": 31,
-          "total": 31,
+          "passed": 30,
+          "total": 30,
           "pct": 100
         },
         "validation": {
-          "passed": 23,
-          "total": 31,
-          "pct": 74
+          "passed": 22,
+          "total": 30,
+          "pct": 73
         }
       },
       "overallPct": 91

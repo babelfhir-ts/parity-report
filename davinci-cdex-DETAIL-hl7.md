@@ -1,5 +1,5 @@
 # davinci-cdex - Detailed Report (FHIR all)
-Generated: 2026-10-01T10:36:00.592Z
+Generated: 2026-10-01T11:37:57.342Z
 
 Package: `hl7.fhir.us.davinci-cdex@2.1.0`
 FHIR Release: all

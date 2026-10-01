@@ -1,5 +1,5 @@
 # isik-basis - Detailed Report (FHIR all)
-Generated: 2026-10-01T10:32:58.912Z
+Generated: 2026-10-01T11:35:07.302Z
 
 Package: `de.gematik.isik-basismodul@4.0.3`
 FHIR Release: all

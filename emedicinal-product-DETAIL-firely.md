@@ -1,5 +1,5 @@
 # emedicinal-product - Detailed Report (FHIR all)
-Generated: 2026-10-01T10:32:50.795Z
+Generated: 2026-10-01T11:35:00.785Z
 
 Package: `hl7.fhir.uv.emedicinal-product-info@1.0.0`
 FHIR Release: all

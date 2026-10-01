@@ -1,5 +1,5 @@
 # cpg - Detailed Report (FHIR all)
-Generated: 2026-10-01T10:33:25.988Z
+Generated: 2026-10-01T11:35:45.477Z
 
 Package: `hl7.fhir.uv.cpg@2.0.0`
 FHIR Release: all

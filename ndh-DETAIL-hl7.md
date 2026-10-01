@@ -1,5 +1,5 @@
 # ndh - Detailed Report (FHIR all)
-Generated: 2026-10-01T10:35:31.074Z
+Generated: 2026-10-01T11:38:31.682Z
 
 Package: `hl7.fhir.us.ndh@1.0.0`
 FHIR Release: all
@@ -9,9 +9,9 @@ FHIR Release: all
 | Metric | Passed | Total | Rate |
 |--------|--------|-------|------|
 | Empty Validation Parity | 31 | 31 | 100% |
-| Random Validation Parity | 31 | 31 | 100% |
-| Random Generation Validation + Parity | 23 | 31 | 74% |
-
+| Random Validation Parity | 30 | 30 | 100% |
+| Random Generation Validation + Parity | 22 | 30 | 73% |
+| Excluded (external issues) | 1 | - | - |
 
 ---
 
@@ -57,7 +57,7 @@ _None_
 
 ## Random Validation Parity Results
 
-### ✅ Passing (31)
+### ✅ Passing (30)
 - ✅ NdhCareTeamClass
 - ✅ NdhLocationClass
 - ✅ NdhNdApiCareTeamClass
@@ -72,7 +72,6 @@ _None_
 - ✅ NdhPnLdApiOrganizationAffiliationClass
 - ✅ NdhPnLdApiOrganizationClass
 - ✅ NdhPnLdApiPractitionerClass
-- ✅ NdhPnLdApiPractitionerRoleClass
 - ✅ NdhPractitionerClass
 - ✅ NdhPractitionerRoleClass
 - ✅ NdhEndpointClass
@@ -93,11 +92,14 @@ _None_
 ### ❌ Failing (0)
 _None_
 
+### ⚠️ Excluded - External Issues (1)
+- ⚠️ NdhPnLdApiPractitionerRoleClass (excluded - Terminology limitation)
+
 ---
 
 ## Random Generation Validation + Parity Results
 
-### ✅ Passing (23)
+### ✅ Passing (22)
 - ✅ NdhCareTeamClass
 - ✅ NdhLocationClass
 - ✅ NdhNdApiCareTeamClass
@@ -107,7 +109,6 @@ _None_
 - ✅ NdhPnLdApiLocationClass
 - ✅ NdhPnLdApiOrganizationClass
 - ✅ NdhPnLdApiPractitionerClass
-- ✅ NdhPnLdApiPractitionerRoleClass
 - ✅ NdhPractitionerClass
 - ✅ NdhPractitionerRoleClass
 - ✅ NdhEndpointClass
@@ -146,6 +147,10 @@ _None_
 - ❌ NdhPnLdApiInsurancePlanClass (2 errors)
     - The organization SHALL at least have a name or an idendtifier, and possibly more than one
     - If an insuranceplan does not define a network, then each plan must define one
+
+### ⚠️ Excluded - External Issues (1)
+- ⚠️ NdhPnLdApiPractitionerRoleClass (excluded - Terminology limitation)
+    - Unknown code '453231000124104' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
 
 ---
 

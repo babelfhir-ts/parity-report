@@ -679,6 +679,40 @@
         "validationTotal": 1598,
         "excluded": 0
       }
+    },
+    {
+      "date": "2026-10-01T11:37:21.405Z",
+      "version": "1.6.17",
+      "packageCount": 31,
+      "hl7Version": "6.10.4",
+      "firelyVersion": "3.3.1",
+      "firely": {
+        "empty": 100,
+        "random": 93,
+        "validation": 74,
+        "emptyTotal": 666,
+        "randomTotal": 665,
+        "validationTotal": 665,
+        "excluded": 52
+      },
+      "hl7": {
+        "empty": 100,
+        "random": 100,
+        "validation": 76,
+        "emptyTotal": 657,
+        "randomTotal": 704,
+        "validationTotal": 704,
+        "excluded": 13
+      },
+      "internal": {
+        "empty": 99,
+        "random": 87,
+        "validation": 78,
+        "emptyTotal": 1598,
+        "randomTotal": 1598,
+        "validationTotal": 1598,
+        "excluded": 0
+      }
     }
   ]
 }

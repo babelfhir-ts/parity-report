@@ -1,5 +1,5 @@
 # ae-research - Detailed Report (FHIR all)
-Generated: 2026-10-01T10:32:33.466Z
+Generated: 2026-10-01T11:34:56.368Z
 
 Package: `hl7.fhir.uv.ae-research-ig@1.0.1`
 FHIR Release: all

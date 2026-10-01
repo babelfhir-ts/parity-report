@@ -1,5 +1,5 @@
 # sdc - Detailed Report (FHIR all)
-Generated: 2026-10-01T10:33:22.308Z
+Generated: 2026-10-01T11:35:54.889Z
 
 Package: `hl7.fhir.uv.sdc@4.0.0`
 FHIR Release: all
@@ -8,7 +8,7 @@ FHIR Release: all
 
 | Metric | Passed | Total | Rate |
 |--------|--------|-------|------|
-| Empty Validation Parity | 34 | 34 | 100% |
+| Empty Validation Parity | 32 | 34 | 94% |
 | Random Validation Parity | 31 | 34 | 91% |
 | Random Generation Validation + Parity | 20 | 34 | 59% |
 
@@ -17,7 +17,7 @@ FHIR Release: all
 
 ## Empty Validation Parity Results
 
-### ✅ Passing (34)
+### ✅ Passing (32)
 - ✅ SDCBaseQuestionnaireClass
 - ✅ SDCModularQuestionnaireClass
 - ✅ SDCModularQuestionnaireLibraryClass
@@ -49,12 +49,19 @@ FHIR Release: all
 - ✅ SDCQuestionnaireSearchClass
 - ✅ SDCQuestionnaireServiceRequestClass
 - ✅ SDCTaskQuestionnaireClass
-- ✅ SDCCodeSystemClass
 - ✅ SDCLibraryClass
-- ✅ SDCValueSetClass
 
-### ❌ Failing (0)
-_None_
+### ❌ Failing (2)
+- ❌ SDCCodeSystemClass
+  - Field-level comparison:
+  Both validators: status, content
+  Only Internal: caseSensitive
+
+- ❌ SDCValueSetClass
+  - Field-level comparison:
+  Both validators: status
+  Only Internal: immutable
+
 
 ---
 

@@ -1,5 +1,5 @@
 # pixm - Detailed Report (FHIR all)
-Generated: 2026-10-01T10:33:04.147Z
+Generated: 2026-10-01T11:35:47.061Z
 
 Package: `ihe.iti.pixm@3.1.0`
 FHIR Release: all
