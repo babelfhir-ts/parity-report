@@ -107,6 +107,7 @@ Usage:
   babelfhir-ts [options] [<input> [output]]
   babelfhir-ts install [--package] <pkg[@version]|path> [--registry <url>] [options]
   babelfhir-ts update [<pkg@version>] [--recursive] [options]
+  babelfhir-ts seed-cache
 
 Arguments:
   input   Input can be:
@@ -120,6 +121,7 @@ Arguments:
 Commands:
   install                Download, process, and npm install package as dependency
   update                 Regenerate all installed packages (or a specific one) with current babelfhir-ts
+  seed-cache             Install FHIR packages embedded in node_modules into the FHIR cache as <id>#dev
 
 Options:
   -h, --help               Show this help message
@@ -138,6 +140,7 @@ Options:
   --recursive              (update only) Recursively search subdirectories for lib/ folders
   --force                  (update only) Force regeneration even if version and flags haven't changed
   --skip-install           (install/update) Write the tarball without running a package manager install
+  --embed-fhir-package     (install/update) Ship the source FHIR package in the generated package, for seed-cache
   --outDir <dir>           Output directory (alias for second positional argument)
   --fhir-version <ver>     FHIR version to target: r4, r4b, or r5 (auto-detected from package if omitted)
   --package <pkg[@version]>  Download FHIR package from registry and process it (latest if no version)
@@ -218,6 +221,20 @@ In monorepos, it walks up the directory tree to find the nearest lockfile.
 ### Bun Compatibility
 
 When using Bun, the install command automatically patches `bun.lock` integrity hashes after installation to work around Bun's strict hash checking for local `.tgz` dependencies.
+
+## Depending on your own IG through npm
+
+A FHIR IG can depend on another IG that is only published as a generated npm package, for example on a private registry that FHIR tooling cannot read:
+
+```bash
+# In the IG being depended on: ship the FHIR package inside the generated package
+babelfhir-ts install ./my.core-0.1.0.tgz --embed-fhir-package
+
+# In the dependent IG: install that npm package, then before SUSHI
+babelfhir-ts seed-cache
+```
+
+`--embed-fhir-package` copies the source FHIR package into `fhir-package/` of the generated package. `seed-cache` finds every installed package carrying one (walking up through each `node_modules`, nearest first) and installs it into the FHIR package cache as `<id>#dev`. Declare the dependency as `my.core: dev` in `sushi-config.yaml`: SUSHI and babelfhir-ts read `#dev` from the cache and never ask a registry for it, so the npm lockfile alone decides which build it is.
 
 ## Update Command
 
