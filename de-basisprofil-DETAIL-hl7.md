@@ -1,5 +1,5 @@
 # de-basisprofil - Detailed Report (FHIR all)
-Generated: 2026-10-01T11:35:37.462Z
+Generated: 2026-09-05T11:31:41.499Z
 
 Package: `de.basisprofil.r4@1.6.0`
 FHIR Release: all
@@ -93,54 +93,54 @@ _None_
 - ❌ NamingsystemDeBasisClass (2 errors)
     - The System URI could not be determined for the code 'document' in the ValueSet 'http://hl7.org/fhir/ValueSet/namingsystem-identifier-type|4.0.1'
     - The value provided ('document') was not found in the value set 'NamingSystemIdentifierType' (http://hl7.org/fhir/ValueSet/namingsystem-identifier-type|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'document' in the ValueSet 'http://hl7.org/fhir/ValueSet/namingsystem-identifier-type|4.0.1'; The provided code '#document' was not found in the value set 'http://hl7.org/fhir/ValueSet/namingsystem-identifier-type|4.0.1')
-- ❌ VitalSignDEArterielleSauerstoffsaettigungClass (5 errors)
+- ❌ VitalSignDEArterielleSauerstoffsaettigungClass (6 errors)
+    - Coding has no code for system http://snomed.info/sct and cannot be validated
     - Value is '/h' but is fixed to '%' in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1#Observation.value[x]:valueQuantity.code
     - Observation.code.coding:snomed.code: minimum required = 1, but only found 0
     - Observation.code.coding.code: minimum required = 1, but only found 0
     - Value is '/h' but is fixed to '%' in the profile http://fhir.de/StructureDefinition/observation-de-vitalsign-sauerstoffsaettigung|1.6.0#Observation
-    - Value is '/h' but is fixed to '%' in the profile http://fhir.de/StructureDefinition/observation-de-vitalsign-sauerstoffsaettigung|1.6.0#Observation.value[x]:valueQuantity
-- ❌ VitalSignDEArterielleSauerstoffsaettigungPulsoximetrieClass (5 errors)
+- ❌ VitalSignDEArterielleSauerstoffsaettigungPulsoximetrieClass (6 errors)
+    - Coding has no code for system http://snomed.info/sct and cannot be validated
     - Value is '/h' but is fixed to '%' in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1#Observation.value[x]:valueQuantity.code
     - Observation.code.coding:snomed.code: minimum required = 1, but only found 0
     - Observation.code.coding.code: minimum required = 1, but only found 0
     - Value is '/h' but is fixed to '%' in the profile http://fhir.de/StructureDefinition/observation-de-vitalsign-sauerstoffsaettigung-pulsoximetrie|1.6.0#Observation
-    - Value is '/h' but is fixed to '%' in the profile http://fhir.de/StructureDefinition/observation-de-vitalsign-sauerstoffsaettigung-pulsoximetrie|1.6.0#Observation.value[x]:valueQuantity
-- ❌ VitalSignDEAtemfrequenzClass (5 errors)
+- ❌ VitalSignDEAtemfrequenzClass (6 errors)
+    - Coding has no code for system http://snomed.info/sct and cannot be validated
     - Value is '/h' but is fixed to '/min' in the profile http://hl7.org/fhir/StructureDefinition/resprate|4.0.1#Observation.value[x]:valueQuantity.code
     - Observation.code.coding:snomed.code: minimum required = 1, but only found 0
     - Observation.code.coding.code: minimum required = 1, but only found 0
     - Value is '/h' but is fixed to '/min' in the profile http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz|1.6.0#Observation
-    - Value is '/h' but is fixed to '/min' in the profile http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz|1.6.0#Observation.value[x]:valueQuantity
-- ❌ VitalSignDEHerzfrequenzClass (5 errors)
+- ❌ VitalSignDEHerzfrequenzClass (6 errors)
+    - Coding has no code for system http://snomed.info/sct and cannot be validated
     - Value is '/h' but is fixed to '/min' in the profile http://hl7.org/fhir/StructureDefinition/heartrate|4.0.1#Observation.value[x]:valueQuantity.code
     - Observation.code.coding:snomed.code: minimum required = 1, but only found 0
     - Observation.code.coding.code: minimum required = 1, but only found 0
     - Value is '/h' but is fixed to '/min' in the profile http://fhir.de/StructureDefinition/observation-de-vitalsign-herzfrequenz|1.6.0#Observation
-    - Value is '/h' but is fixed to '/min' in the profile http://fhir.de/StructureDefinition/observation-de-vitalsign-herzfrequenz|1.6.0#Observation.value[x]:valueQuantity
-- ❌ VitalSignDEKoerpergewichtClass (5 errors)
+- ❌ VitalSignDEKoerpergewichtClass (6 errors)
+    - Coding has no code for system http://snomed.info/sct and cannot be validated
     - The System URI could not be determined for the code '/h' in the ValueSet 'http://hl7.org/fhir/ValueSet/ucum-bodyweight|4.0.1'
     - The value provided ('/h') was not found in the value set 'Body Weight Units' (http://hl7.org/fhir/ValueSet/ucum-bodyweight|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code '/h' in the ValueSet 'http://hl7.org/fhir/ValueSet/ucum-bodyweight|4.0.1'; The provided code '#/h' was not found in the value set 'http://hl7.org/fhir/ValueSet/ucum-bodyweight|4.0.1')
     - Observation.code.coding:snomed.code: minimum required = 1, but only found 0
     - Observation.code.coding.code: minimum required = 1, but only found 0
-    - The code provided (http://unitsofmeasure.org#/h) was not found in the value set 'VitalSignDE_Body_Weigth_UCUM' (http://fhir.de/ValueSet/VitalSignDE_Body_Weigth_UCUM|1.6.0), and a code from this value set is required: The provided code 'http://unitsofmeasure.org#/h' was not found in the value set 'http://fhir.de/ValueSet/VitalSignDE_Body_Weigth_UCUM|1.6.0'
-- ❌ VitalSignDEKoerpergroesseClass (5 errors)
+- ❌ VitalSignDEKoerpergroesseClass (6 errors)
+    - Coding has no code for system http://snomed.info/sct and cannot be validated
     - The System URI could not be determined for the code '/h' in the ValueSet 'http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.1'
     - The value provided ('/h') was not found in the value set 'Body Length Units' (http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code '/h' in the ValueSet 'http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.1'; The provided code '#/h' was not found in the value set 'http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.1')
     - Observation.code.coding:snomed.code: minimum required = 1, but only found 0
     - Observation.code.coding.code: minimum required = 1, but only found 0
-    - The code provided (http://unitsofmeasure.org#/h) was not found in the value set 'VitalSignDE_Body_Length_UCUM' (http://fhir.de/ValueSet/VitalSignDE_Body_Length_UCUM|1.6.0), and a code from this value set is required: The provided code 'http://unitsofmeasure.org#/h' was not found in the value set 'http://fhir.de/ValueSet/VitalSignDE_Body_Length_UCUM|1.6.0'
-- ❌ VitalSignDEKoerperkerntemperaturClass (6 errors)
+- ❌ VitalSignDEKoerperkerntemperaturClass (7 errors)
+    - Coding has no code for system http://snomed.info/sct and cannot be validated
     - The System URI could not be determined for the code '/h' in the ValueSet 'http://hl7.org/fhir/ValueSet/ucum-bodytemp|4.0.1'
     - The value provided ('/h') was not found in the value set 'Body Temperature Units' (http://hl7.org/fhir/ValueSet/ucum-bodytemp|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code '/h' in the ValueSet 'http://hl7.org/fhir/ValueSet/ucum-bodytemp|4.0.1'; The provided code '#/h' was not found in the value set 'http://hl7.org/fhir/ValueSet/ucum-bodytemp|4.0.1')
     - Observation.code.coding:snomed.code: minimum required = 1, but only found 0
     - Observation.code.coding.code: minimum required = 1, but only found 0
-    - Value is '/h' but is fixed to 'Cel' in the profile http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpertemperatur|1.6.0#Observation
-- ❌ VitalSignDEKopfumfangClass (5 errors)
+- ❌ VitalSignDEKopfumfangClass (6 errors)
+    - Coding has no code for system http://snomed.info/sct and cannot be validated
     - The System URI could not be determined for the code '/h' in the ValueSet 'http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.1'
     - The value provided ('/h') was not found in the value set 'Body Length Units' (http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code '/h' in the ValueSet 'http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.1'; The provided code '#/h' was not found in the value set 'http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.1')
     - Observation.code.coding:snomed.code: minimum required = 1, but only found 0
     - Observation.code.coding.code: minimum required = 1, but only found 0
-    - The code provided (http://unitsofmeasure.org#/h) was not found in the value set 'VitalSignDE_Body_Length_UCUM' (http://fhir.de/ValueSet/VitalSignDE_Body_Length_UCUM|1.6.0), and a code from this value set is required: The provided code 'http://unitsofmeasure.org#/h' was not found in the value set 'http://fhir.de/ValueSet/VitalSignDE_Body_Length_UCUM|1.6.0'
 
 ---
 
