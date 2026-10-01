@@ -1,5 +1,5 @@
 # au-core - Detailed Report (FHIR all)
-Generated: 2026-09-05T11:32:27.112Z
+Generated: 2026-10-01T09:10:17.695Z
 
 Package: `hl7.fhir.au.core@2.0.0`
 FHIR Release: all

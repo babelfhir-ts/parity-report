@@ -1,5 +1,5 @@
 # us-core - Detailed Report (FHIR all)
-Generated: 2026-09-05T11:34:30.663Z
+Generated: 2026-10-01T09:12:33.209Z
 
 Package: `hl7.fhir.us.core@9.0.0`
 FHIR Release: all

@@ -1,5 +1,5 @@
 # isik-basis - Detailed Report (FHIR all)
-Generated: 2026-09-05T11:32:04.542Z
+Generated: 2026-10-01T09:09:45.174Z
 
 Package: `de.gematik.isik-basismodul@4.0.3`
 FHIR Release: all
@@ -9,7 +9,7 @@ FHIR Release: all
 | Metric | Passed | Total | Rate |
 |--------|--------|-------|------|
 | Empty Validation Parity | 25 | 25 | 100% |
-| Random Validation Parity | 25 | 25 | 100% |
+| Random Validation Parity | 24 | 25 | 96% |
 | Random Generation Validation + Parity | 23 | 25 | 92% |
 
 
@@ -51,7 +51,7 @@ _None_
 
 ## Random Validation Parity Results
 
-### ✅ Passing (25)
+### ✅ Passing (24)
 - ✅ ISiKAbrechnungsfallClass
 - ✅ ISiKAlkoholAbususClass
 - ✅ ISiKAllergieUnvertraeglichkeitClass
@@ -67,7 +67,6 @@ _None_
 - ✅ ISiKPatientClass
 - ✅ ISiKPatientMergeSubscriptionClass
 - ✅ ISiKPersonImGesundheitsberufClass
-- ✅ ISiKProzedurClass
 - ✅ ISiKRaucherStatusClass
 - ✅ ISiKSchwangerschaftErwarteterEntbindungsterminClass
 - ✅ ISiKSchwangerschaftsstatusClass
@@ -78,8 +77,12 @@ _None_
 - ✅ ISiKValueSetClass
 - ✅ PatientMergeSubscriptionClass
 
-### ❌ Failing (0)
-_None_
+### ❌ Failing (1)
+- ❌ ISiKProzedurClass
+  - Field-level comparison:
+  Both validators: none
+  Only HL7: code
+
 
 ---
 
@@ -114,7 +117,7 @@ _None_
 - ❌ ISiKAngehoerigerClass (1 errors)
     - Slicing cannot be evaluated: Could not match discriminator ($this) for slice RelatedPerson.name:Name in profile https://gematik.de/fhir/isik/StructureDefinition/ISiKAngehoeriger|4.0.3 - the discriminator [$this] does not have fixed value, binding or existence assertions
 - ❌ ISiKProzedurClass (1 errors)
-    - The code system 'http://fhir.de/CodeSystem/bfarm/ops' version '*' in the ValueSet include is different to the one in the value ('2026')
+    - Unknown code 'code-id-7ye' in the CodeSystem 'http://fhir.de/CodeSystem/bfarm/ops' version '2026'
 
 ---
 

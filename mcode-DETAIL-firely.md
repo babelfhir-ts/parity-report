@@ -1,5 +1,5 @@
 # mcode - Detailed Report (FHIR all)
-Generated: 2026-09-05T11:32:18.739Z
+Generated: 2026-10-01T09:09:44.242Z
 
 Package: `hl7.fhir.us.mcode@4.0.0`
 FHIR Release: all

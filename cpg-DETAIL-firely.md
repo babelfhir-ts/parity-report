@@ -1,5 +1,5 @@
 # cpg - Detailed Report (FHIR all)
-Generated: 2026-09-05T11:32:36.079Z
+Generated: 2026-10-01T09:09:33.905Z
 
 Package: `hl7.fhir.uv.cpg@2.0.0`
 FHIR Release: all
@@ -320,7 +320,7 @@ _None_
 
 ### ❌ Failing (20)
 - ❌ CPGImmunizationRequestClass (1 errors)
-    - Value '{"system":"http://terminology.hl7.org/CodeSystem/medicationrequest-category","code":"inpatient"}' does not match pattern '{"system":"http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs","code":"recommend-immunization"}' (for slice immunization)
+    - Value '{"system":"http://terminology.hl7.org/CodeSystem/medicationrequest-category","code":"inpatient","display":"Inpatient"}' does not match pattern '{"system":"http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs","code":"recommend-immunization"}' (for slice immunization)
 - ❌ CHFBodyWeightChangeClass (1 errors)
     - Unable to resolve reference to profile 'http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight-change'.
 - ❌ CHFCardiologyConsultClass (1 errors)

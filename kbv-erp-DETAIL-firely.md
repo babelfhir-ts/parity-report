@@ -1,5 +1,5 @@
 # kbv-erp - Detailed Report (FHIR all)
-Generated: 2026-09-05T11:32:04.684Z
+Generated: 2026-10-01T09:09:24.171Z
 
 Package: `kbv.ita.erp@1.4.4`
 FHIR Release: all
@@ -60,6 +60,7 @@ _None_
   - Field-level comparison:
   Both validators: unclassified, extension, url, profile
   Only Internal: constraint, entry
+  Only Firely: coding
 
 - ❌ KBVPRERPBundleClass
   - Field-level comparison:
@@ -86,7 +87,7 @@ _None_
     - Value 'code-id-qz5' is not exactly equal to fixed value 'wirkstoff' (for slice verordnungskategorieCode)
     - Missing required member: 'text' (for slice itemCodeableConcept)
     - Element does not match any slice and the group is closed. (for slice @default)
-- ❌ KBVPRERPMedicationPZNClass (9 errors)
+- ❌ KBVPRERPMedicationPZNClass (11 errors)
     - Instance failed constraint -erp-angabeNormgroesseOderMenge "Packungsgröße oder Normgröße (Wert N1 oder N2 oder N3) müssen angegeben sein"
     - No elements matched required slice: 'profile:erpProfile'
     - Missing required member: 'url'
