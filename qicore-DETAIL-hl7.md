@@ -1,5 +1,5 @@
 # qicore - Detailed Report (FHIR all)
-Generated: 2026-10-01T09:12:56.510Z
+Generated: 2026-10-01T10:38:07.237Z
 
 Package: `hl7.fhir.us.qicore@7.0.2`
 FHIR Release: all

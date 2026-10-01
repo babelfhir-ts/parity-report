@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-01T09:11:05.882Z",
-  "babelfhirVersion": "1.6.15",
+  "generated": "2026-10-01T10:34:34.202Z",
+  "babelfhirVersion": "1.6.16",
   "fhirRelease": "R4",
   "validator": "Firely SDK Validator",
   "validatorVersion": "3.3.1",
@@ -618,319 +618,319 @@
   },
   "timing": {
     "totalResources": 3196,
-    "totalS": 25.34,
-    "totalZodS": 4.25,
-    "totalExtS": 1408.33,
+    "totalS": 25.06,
+    "totalZodS": 4.36,
+    "totalExtS": 1419.4,
     "packages": [
       {
         "name": "ae-research",
         "resources": 10,
-        "totalS": 0.12,
-        "avgMs": 11.5,
+        "totalS": 0.14,
+        "avgMs": 13.6,
         "zodTotalS": 0.02,
-        "zodAvgMs": 1.5,
-        "extTotalS": 24.54,
-        "extAvgMs": 12270.5
+        "zodAvgMs": 2.5,
+        "extTotalS": 17.43,
+        "extAvgMs": 8715
       },
       {
         "name": "au-core",
         "resources": 120,
-        "totalS": 0.92,
-        "avgMs": 7.6,
-        "zodTotalS": 0.15,
-        "zodAvgMs": 1.3,
-        "extTotalS": 28.75,
-        "extAvgMs": 575.1
+        "totalS": 0.97,
+        "avgMs": 8,
+        "zodTotalS": 0.11,
+        "zodAvgMs": 0.9,
+        "extTotalS": 38.59,
+        "extAvgMs": 771.8
       },
       {
         "name": "carin-bb",
         "resources": 44,
-        "totalS": 0.94,
-        "avgMs": 21.3,
-        "zodTotalS": 0.1,
-        "zodAvgMs": 2.3,
-        "extTotalS": 29.25,
-        "extAvgMs": 914.1
+        "totalS": 1.52,
+        "avgMs": 34.5,
+        "zodTotalS": 0.12,
+        "zodAvgMs": 2.7,
+        "extTotalS": 24.44,
+        "extAvgMs": 763.8
       },
       {
         "name": "ch-core",
         "resources": 176,
-        "totalS": 1.23,
-        "avgMs": 7,
+        "totalS": 1.35,
+        "avgMs": 7.7,
         "zodTotalS": 0.2,
         "zodAvgMs": 1.1,
-        "extTotalS": 38.7,
-        "extAvgMs": 667.2
+        "extTotalS": 40.87,
+        "extAvgMs": 704.6
       },
       {
         "name": "cpg",
         "resources": 264,
-        "totalS": 1.17,
-        "avgMs": 4.4,
-        "zodTotalS": 0.47,
-        "zodAvgMs": 1.8,
-        "extTotalS": 57.89,
-        "extAvgMs": 292.4
+        "totalS": 0.81,
+        "avgMs": 3.1,
+        "zodTotalS": 0.35,
+        "zodAvgMs": 1.3,
+        "extTotalS": 61.74,
+        "extAvgMs": 311.8
       },
       {
         "name": "cqfmeasures",
         "resources": 88,
-        "totalS": 0.83,
-        "avgMs": 9.4,
+        "totalS": 0.98,
+        "avgMs": 11.2,
         "zodTotalS": 0.15,
         "zodAvgMs": 1.7,
-        "extTotalS": 21.98,
-        "extAvgMs": 845.4
+        "extTotalS": 23.76,
+        "extAvgMs": 913.7
       },
       {
         "name": "davinci-alerts",
         "resources": 20,
         "totalS": 0.17,
-        "avgMs": 8.7,
+        "avgMs": 8.3,
         "zodTotalS": 0.03,
         "zodAvgMs": 1.7,
-        "extTotalS": 60.62,
-        "extAvgMs": 3788.8
+        "extTotalS": 64.36,
+        "extAvgMs": 4022.2
       },
       {
         "name": "davinci-cdex",
         "resources": 30,
-        "totalS": 0.23,
-        "avgMs": 7.7,
-        "zodTotalS": 0.07,
-        "zodAvgMs": 2.2,
-        "extTotalS": 77.18,
-        "extAvgMs": 5512.8
+        "totalS": 0.15,
+        "avgMs": 4.9,
+        "zodTotalS": 0.05,
+        "zodAvgMs": 1.6,
+        "extTotalS": 77.39,
+        "extAvgMs": 5528.1
       },
       {
         "name": "davinci-deqm",
         "resources": 68,
-        "totalS": 0.55,
-        "avgMs": 8.1,
-        "zodTotalS": 0.07,
-        "zodAvgMs": 1,
-        "extTotalS": 55.08,
-        "extAvgMs": 2503.7
+        "totalS": 0.52,
+        "avgMs": 7.7,
+        "zodTotalS": 0.08,
+        "zodAvgMs": 1.2,
+        "extTotalS": 57.41,
+        "extAvgMs": 2609.3
       },
       {
         "name": "davinci-drug-formulary",
         "resources": 42,
-        "totalS": 0.75,
-        "avgMs": 18,
+        "totalS": 0.5,
+        "avgMs": 11.9,
         "zodTotalS": 0.08,
         "zodAvgMs": 1.9,
-        "extTotalS": 37.96,
-        "extAvgMs": 2372.3
+        "extTotalS": 44.05,
+        "extAvgMs": 2752.9
       },
       {
         "name": "davinci-dtr",
         "resources": 192,
-        "totalS": 1.55,
-        "avgMs": 8.1,
-        "zodTotalS": 0.11,
-        "zodAvgMs": 0.6,
-        "extTotalS": 54.72,
-        "extAvgMs": 1954.4
+        "totalS": 1.7,
+        "avgMs": 8.9,
+        "zodTotalS": 0.16,
+        "zodAvgMs": 0.8,
+        "extTotalS": 54.24,
+        "extAvgMs": 1937.3
       },
       {
         "name": "davinci-pas",
         "resources": 194,
-        "totalS": 2,
-        "avgMs": 10.3,
-        "zodTotalS": 0.21,
-        "zodAvgMs": 1.1,
-        "extTotalS": 56.3,
-        "extAvgMs": 970.7
+        "totalS": 1.86,
+        "avgMs": 9.6,
+        "zodTotalS": 0.12,
+        "zodAvgMs": 0.6,
+        "extTotalS": 50.66,
+        "extAvgMs": 873.4
       },
       {
         "name": "davinci-pdex",
         "resources": 118,
-        "totalS": 0.42,
-        "avgMs": 3.6,
-        "zodTotalS": 0.08,
-        "zodAvgMs": 0.7,
-        "extTotalS": 38.31,
-        "extAvgMs": 1473.5
+        "totalS": 0.51,
+        "avgMs": 4.3,
+        "zodTotalS": 0.11,
+        "zodAvgMs": 0.9,
+        "extTotalS": 37.16,
+        "extAvgMs": 1429
       },
       {
         "name": "de-basisprofil",
         "resources": 170,
-        "totalS": 0.63,
-        "avgMs": 3.7,
-        "zodTotalS": 0.13,
-        "zodAvgMs": 0.8,
-        "extTotalS": 35.02,
-        "extAvgMs": 921.6
+        "totalS": 1.1,
+        "avgMs": 6.5,
+        "zodTotalS": 0.21,
+        "zodAvgMs": 1.3,
+        "extTotalS": 38.01,
+        "extAvgMs": 1000.1
       },
       {
         "name": "emedicinal-product",
         "resources": 30,
-        "totalS": 0.33,
-        "avgMs": 11.1,
-        "zodTotalS": 0.09,
-        "zodAvgMs": 3.1,
-        "extTotalS": 29.88,
-        "extAvgMs": 995.9
+        "totalS": 0.32,
+        "avgMs": 10.7,
+        "zodTotalS": 0.08,
+        "zodAvgMs": 2.8,
+        "extTotalS": 29.03,
+        "extAvgMs": 967.7
       },
       {
         "name": "genomics-reporting",
         "resources": 96,
-        "totalS": 0.38,
-        "avgMs": 3.9,
-        "zodTotalS": 0.11,
-        "zodAvgMs": 1.2,
-        "extTotalS": 33.75,
-        "extAvgMs": 992.7
+        "totalS": 0.44,
+        "avgMs": 4.6,
+        "zodTotalS": 0.13,
+        "zodAvgMs": 1.3,
+        "extTotalS": 33.63,
+        "extAvgMs": 989
       },
       {
         "name": "ips",
         "resources": 76,
-        "totalS": 0.32,
-        "avgMs": 4.2,
-        "zodTotalS": 0.13,
-        "zodAvgMs": 1.7,
-        "extTotalS": 37.83,
-        "extAvgMs": 700.5
+        "totalS": 0.45,
+        "avgMs": 6,
+        "zodTotalS": 0.14,
+        "zodAvgMs": 1.9,
+        "extTotalS": 41.94,
+        "extAvgMs": 776.7
       },
       {
         "name": "isik-basis",
         "resources": 126,
-        "totalS": 1.5,
-        "avgMs": 11.9,
-        "zodTotalS": 0.12,
-        "zodAvgMs": 1,
-        "extTotalS": 34.53,
-        "extAvgMs": 616.6
+        "totalS": 1.11,
+        "avgMs": 8.8,
+        "zodTotalS": 0.16,
+        "zodAvgMs": 1.2,
+        "extTotalS": 32.86,
+        "extAvgMs": 586.9
       },
       {
         "name": "isik-medikation",
         "resources": 32,
-        "totalS": 1.63,
-        "avgMs": 51,
-        "zodTotalS": 0.05,
-        "zodAvgMs": 1.5,
-        "extTotalS": 33.17,
-        "extAvgMs": 2072.9
+        "totalS": 1.13,
+        "avgMs": 35.4,
+        "zodTotalS": 0.04,
+        "zodAvgMs": 1.4,
+        "extTotalS": 20.27,
+        "extAvgMs": 1267.2
       },
       {
         "name": "kbv-erp",
         "resources": 64,
-        "totalS": 1.27,
-        "avgMs": 19.9,
-        "zodTotalS": 0.07,
+        "totalS": 1.08,
+        "avgMs": 16.9,
+        "zodTotalS": 0.08,
         "zodAvgMs": 1.2,
-        "extTotalS": 40.79,
-        "extAvgMs": 2549.4
+        "extTotalS": 34.8,
+        "extAvgMs": 2175
       },
       {
         "name": "mcode",
         "resources": 142,
-        "totalS": 0.89,
-        "avgMs": 6.3,
+        "totalS": 0.88,
+        "avgMs": 6.2,
         "zodTotalS": 0.21,
         "zodAvgMs": 1.5,
-        "extTotalS": 67.45,
-        "extAvgMs": 887.6
+        "extTotalS": 72.15,
+        "extAvgMs": 949.4
       },
       {
         "name": "mhd",
         "resources": 78,
-        "totalS": 0.94,
-        "avgMs": 12,
-        "zodTotalS": 0.16,
-        "zodAvgMs": 2.1,
-        "extTotalS": 44.79,
-        "extAvgMs": 722.4
+        "totalS": 0.82,
+        "avgMs": 10.5,
+        "zodTotalS": 0.2,
+        "zodAvgMs": 2.6,
+        "extTotalS": 48.36,
+        "extAvgMs": 780
       },
       {
         "name": "ndh",
         "resources": 176,
-        "totalS": 0.87,
-        "avgMs": 4.9,
-        "zodTotalS": 0.19,
-        "zodAvgMs": 1.1,
-        "extTotalS": 33.91,
-        "extAvgMs": 546.9
+        "totalS": 0.74,
+        "avgMs": 4.2,
+        "zodTotalS": 0.16,
+        "zodAvgMs": 0.9,
+        "extTotalS": 33.89,
+        "extAvgMs": 546.5
       },
       {
         "name": "physical-activity",
         "resources": 38,
-        "totalS": 0.88,
-        "avgMs": 23.2,
+        "totalS": 0.55,
+        "avgMs": 14.6,
         "zodTotalS": 0.1,
-        "zodAvgMs": 2.7,
-        "extTotalS": 45.3,
-        "extAvgMs": 1415.7
+        "zodAvgMs": 2.6,
+        "extTotalS": 54.11,
+        "extAvgMs": 1690.9
       },
       {
         "name": "pixm",
         "resources": 30,
-        "totalS": 0.25,
-        "avgMs": 8.2,
-        "zodTotalS": 0.07,
-        "zodAvgMs": 2.2,
-        "extTotalS": 42.08,
-        "extAvgMs": 1912.8
+        "totalS": 0.29,
+        "avgMs": 9.6,
+        "zodTotalS": 0.08,
+        "zodAvgMs": 2.7,
+        "extTotalS": 38.63,
+        "extAvgMs": 1755.7
       },
       {
         "name": "qicore",
         "resources": 172,
-        "totalS": 0.74,
-        "avgMs": 4.3,
-        "zodTotalS": 0.24,
-        "zodAvgMs": 1.4,
-        "extTotalS": 75.48,
-        "extAvgMs": 580.6
+        "totalS": 1.06,
+        "avgMs": 6.2,
+        "zodTotalS": 0.35,
+        "zodAvgMs": 2.1,
+        "extTotalS": 79.56,
+        "extAvgMs": 612
       },
       {
         "name": "sdc",
         "resources": 320,
-        "totalS": 1.45,
-        "avgMs": 4.5,
-        "zodTotalS": 0.26,
-        "zodAvgMs": 0.8,
-        "extTotalS": 63.76,
-        "extAvgMs": 937.6
+        "totalS": 1.14,
+        "avgMs": 3.6,
+        "zodTotalS": 0.23,
+        "zodAvgMs": 0.7,
+        "extTotalS": 59.07,
+        "extAvgMs": 868.7
       },
       {
         "name": "sdoh",
         "resources": 50,
-        "totalS": 0.64,
-        "avgMs": 12.8,
-        "zodTotalS": 0.14,
-        "zodAvgMs": 2.7,
-        "extTotalS": 52.86,
-        "extAvgMs": 1321.6
+        "totalS": 0.9,
+        "avgMs": 18.1,
+        "zodTotalS": 0.12,
+        "zodAvgMs": 2.5,
+        "extTotalS": 52.07,
+        "extAvgMs": 1301.7
       },
       {
         "name": "smart",
         "resources": 18,
-        "totalS": 0.36,
-        "avgMs": 19.9,
-        "zodTotalS": 0.05,
-        "zodAvgMs": 2.8,
-        "extTotalS": 23.97,
-        "extAvgMs": 1997.5
+        "totalS": 0.34,
+        "avgMs": 19.1,
+        "zodTotalS": 0.04,
+        "zodAvgMs": 2.4,
+        "extTotalS": 19.03,
+        "extAvgMs": 1585.6
       },
       {
         "name": "us-core",
         "resources": 164,
-        "totalS": 1,
-        "avgMs": 6.1,
-        "zodTotalS": 0.29,
-        "zodAvgMs": 1.8,
-        "extTotalS": 110.98,
-        "extAvgMs": 1008.9
+        "totalS": 1.11,
+        "avgMs": 6.8,
+        "zodTotalS": 0.32,
+        "zodAvgMs": 1.9,
+        "extTotalS": 108.08,
+        "extAvgMs": 982.6
       },
       {
         "name": "vitals",
         "resources": 48,
-        "totalS": 0.38,
-        "avgMs": 8,
-        "zodTotalS": 0.1,
-        "zodAvgMs": 2.2,
-        "extTotalS": 21.5,
-        "extAvgMs": 716.6
+        "totalS": 0.42,
+        "avgMs": 8.8,
+        "zodTotalS": 0.13,
+        "zodAvgMs": 2.6,
+        "extTotalS": 31.81,
+        "extAvgMs": 1060.4
       }
     ]
   },

@@ -1,5 +1,5 @@
 # isik-medikation - Detailed Report (FHIR all)
-Generated: 2026-10-01T09:09:48.134Z
+Generated: 2026-10-01T10:33:10.170Z
 
 Package: `de.gematik.isik-medikation@4.0.3`
 FHIR Release: all

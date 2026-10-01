@@ -1,5 +1,5 @@
 # Pipeline Parity Summary (FHIR all)
-Generated: 2026-10-01T09:15:45.179Z
+Generated: 2026-10-01T10:40:57.670Z
 
 ## Packages Tested
 - ae-research: hl7.fhir.uv.ae-research-ig@1.0.1
@@ -135,41 +135,41 @@ These specific fields are excluded from parity comparison because validators rep
 
 ## Validation Timing
 
-HL7 `validate()` across 3196 resources: validate() 25.34s, Zod 4.25s, HL7 4514.70s.
+HL7 `validate()` across 3196 resources: validate() 25.06s, Zod 4.36s, HL7 4081.66s.
 
 | Package | Resources | Val Total | Val Avg | Zod Total | Zod Avg | HL7 Total | HL7 Avg |
 |---------|-----------|-----------|---------|-----------|---------|-------------------|-----------------|
-| ae-research | 10 | 0.12s | 11.5ms | 0.02s | 1.5ms | 33.64s | 16818.0ms |
-| au-core | 120 | 0.92s | 7.6ms | 0.15s | 1.3ms | 101.92s | 2038.5ms |
-| carin-bb | 44 | 0.94s | 21.3ms | 0.10s | 2.3ms | 137.50s | 4297.0ms |
-| ch-core | 176 | 1.23s | 7.0ms | 0.20s | 1.1ms | 130.54s | 2250.7ms |
-| cpg | 264 | 1.17s | 4.4ms | 0.47s | 1.8ms | 233.97s | 1181.7ms |
-| cqfmeasures | 88 | 0.83s | 9.4ms | 0.15s | 1.7ms | 93.05s | 3578.7ms |
-| davinci-alerts | 20 | 0.17s | 8.7ms | 0.03s | 1.7ms | 151.79s | 9486.7ms |
-| davinci-cdex | 30 | 0.23s | 7.7ms | 0.07s | 2.2ms | 191.70s | 13692.7ms |
-| davinci-deqm | 68 | 0.55s | 8.1ms | 0.07s | 1.0ms | 179.96s | 8179.8ms |
-| davinci-drug-formulary | 42 | 0.75s | 18.0ms | 0.08s | 1.9ms | 107.12s | 6695.1ms |
-| davinci-dtr | 192 | 1.55s | 8.1ms | 0.11s | 0.6ms | 323.61s | 11557.4ms |
-| davinci-pas | 194 | 2.00s | 10.3ms | 0.21s | 1.1ms | 370.58s | 6389.3ms |
-| davinci-pdex | 118 | 0.42s | 3.6ms | 0.08s | 0.7ms | 310.13s | 11928.0ms |
-| de-basisprofil | 170 | 0.63s | 3.7ms | 0.13s | 0.8ms | 60.13s | 1582.2ms |
-| emedicinal-product | 30 | 0.33s | 11.1ms | 0.09s | 3.1ms | 46.19s | 1539.7ms |
-| genomics-reporting | 96 | 0.38s | 3.9ms | 0.11s | 1.2ms | 102.67s | 3019.9ms |
-| ips | 76 | 0.32s | 4.2ms | 0.13s | 1.7ms | 75.46s | 1397.4ms |
-| isik-basis | 126 | 1.50s | 11.9ms | 0.12s | 1.0ms | 69.57s | 1242.3ms |
-| isik-medikation | 32 | 1.63s | 51.0ms | 0.05s | 1.5ms | 68.71s | 4294.6ms |
-| kbv-erp | 64 | 1.27s | 19.9ms | 0.07s | 1.2ms | 83.31s | 5206.8ms |
-| mcode | 142 | 0.89s | 6.3ms | 0.21s | 1.5ms | 116.58s | 1533.9ms |
-| mhd | 78 | 0.94s | 12.0ms | 0.16s | 2.1ms | 207.09s | 3340.2ms |
-| ndh | 176 | 0.87s | 4.9ms | 0.19s | 1.1ms | 191.49s | 3088.5ms |
-| physical-activity | 38 | 0.88s | 23.2ms | 0.10s | 2.7ms | 95.13s | 2972.8ms |
-| pixm | 30 | 0.25s | 8.2ms | 0.07s | 2.2ms | 71.23s | 3237.6ms |
-| qicore | 172 | 0.74s | 4.3ms | 0.24s | 1.4ms | 257.74s | 1982.6ms |
-| sdc | 320 | 1.45s | 4.5ms | 0.26s | 0.8ms | 165.88s | 2439.4ms |
-| sdoh | 50 | 0.64s | 12.8ms | 0.14s | 2.7ms | 160.02s | 4000.4ms |
-| smart | 18 | 0.36s | 19.9ms | 0.05s | 2.8ms | 74.14s | 6177.9ms |
-| us-core | 164 | 1.00s | 6.1ms | 0.29s | 1.8ms | 234.87s | 2135.1ms |
-| vitals | 48 | 0.38s | 8.0ms | 0.10s | 2.2ms | 68.98s | 2299.3ms |
+| ae-research | 10 | 0.14s | 13.6ms | 0.02s | 2.5ms | 39.01s | 19504.0ms |
+| au-core | 120 | 0.97s | 8.0ms | 0.11s | 0.9ms | 84.65s | 1693.0ms |
+| carin-bb | 44 | 1.52s | 34.5ms | 0.12s | 2.7ms | 109.48s | 3421.2ms |
+| ch-core | 176 | 1.35s | 7.7ms | 0.20s | 1.1ms | 98.60s | 1699.9ms |
+| cpg | 264 | 0.81s | 3.1ms | 0.35s | 1.3ms | 194.66s | 983.1ms |
+| cqfmeasures | 88 | 0.98s | 11.2ms | 0.15s | 1.7ms | 67.94s | 2613.1ms |
+| davinci-alerts | 20 | 0.17s | 8.3ms | 0.03s | 1.7ms | 96.97s | 6060.4ms |
+| davinci-cdex | 30 | 0.15s | 4.9ms | 0.05s | 1.6ms | 199.87s | 14276.7ms |
+| davinci-deqm | 68 | 0.52s | 7.7ms | 0.08s | 1.2ms | 114.21s | 5191.2ms |
+| davinci-drug-formulary | 42 | 0.50s | 11.9ms | 0.08s | 1.9ms | 103.16s | 6447.4ms |
+| davinci-dtr | 192 | 1.70s | 8.9ms | 0.16s | 0.8ms | 422.05s | 15073.3ms |
+| davinci-pas | 194 | 1.86s | 9.6ms | 0.12s | 0.6ms | 247.94s | 4274.9ms |
+| davinci-pdex | 118 | 0.51s | 4.3ms | 0.11s | 0.9ms | 465.87s | 17918.1ms |
+| de-basisprofil | 170 | 1.10s | 6.5ms | 0.21s | 1.3ms | 52.67s | 1386.2ms |
+| emedicinal-product | 30 | 0.32s | 10.7ms | 0.08s | 2.8ms | 29.45s | 981.5ms |
+| genomics-reporting | 96 | 0.44s | 4.6ms | 0.13s | 1.3ms | 72.05s | 2119.0ms |
+| ips | 76 | 0.45s | 6.0ms | 0.14s | 1.9ms | 63.41s | 1174.2ms |
+| isik-basis | 126 | 1.11s | 8.8ms | 0.16s | 1.2ms | 35.98s | 642.5ms |
+| isik-medikation | 32 | 1.13s | 35.4ms | 0.04s | 1.4ms | 50.10s | 3131.4ms |
+| kbv-erp | 64 | 1.08s | 16.9ms | 0.08s | 1.2ms | 40.28s | 2517.8ms |
+| mcode | 142 | 0.88s | 6.2ms | 0.21s | 1.5ms | 128.87s | 1695.6ms |
+| mhd | 78 | 0.82s | 10.5ms | 0.20s | 2.6ms | 182.75s | 2947.6ms |
+| ndh | 176 | 0.74s | 4.2ms | 0.16s | 0.9ms | 174.84s | 2820.1ms |
+| physical-activity | 38 | 0.55s | 14.6ms | 0.10s | 2.6ms | 58.01s | 1812.9ms |
+| pixm | 30 | 0.29s | 9.6ms | 0.08s | 2.7ms | 44.42s | 2019.0ms |
+| qicore | 172 | 1.06s | 6.2ms | 0.35s | 2.1ms | 333.69s | 2566.8ms |
+| sdc | 320 | 1.14s | 3.6ms | 0.23s | 0.7ms | 120.90s | 1778.0ms |
+| sdoh | 50 | 0.90s | 18.1ms | 0.12s | 2.5ms | 122.09s | 3052.2ms |
+| smart | 18 | 0.34s | 19.1ms | 0.04s | 2.4ms | 33.40s | 2783.3ms |
+| us-core | 164 | 1.11s | 6.8ms | 0.32s | 1.9ms | 241.79s | 2198.1ms |
+| vitals | 48 | 0.42s | 8.8ms | 0.13s | 2.6ms | 52.55s | 1751.6ms |
 
 ## Environment
 - FHIR_RELEASE: all
