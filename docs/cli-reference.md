@@ -57,8 +57,8 @@ Options:
   --display-language <lang> BCP-47 language(s) for display terms (e.g., de or de,fr,en).
                            Single value replaces concept displays. Comma-separated values
                            also generate a multi-language display map with getDisplay() helper.
-  --max-codes <n>          Max concepts kept per expanded ValueSet (default: 100).
-                           Sent as the $expand count; a larger ValueSet is truncated to it.
+  --max-codes <n>          Max concepts kept per expanded ValueSet (default: 1000).
+                           Sent as the $expand count; past it the Code type is 'string'.
   --union-threshold <n>    Cap the concepts for which a ValueSet Code type is a
                            string-literal union. Uncapped by default; above a cap
                            the type is "string". For a pathological IG only.
