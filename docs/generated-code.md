@@ -16,7 +16,7 @@ Generated profile packages installed via `babelfhir-ts install` are published as
 ## Dependencies
 
 * `@types/fhir` is included as a dependency of the generated package (no extra setup in your app)
-* The version-matched base client (e.g., [`@babelfhir-ts/client-r4`](https://www.npmjs.com/package/@babelfhir-ts/client-r4)) is included as a dependency (base FHIR client that the generated client extends)
+* The version-matched base client (e.g., [`@babelfhir-ts/client-r4`](https://www.npmjs.com/package/@babelfhir-ts/client-r4)) and `@babelfhir-ts/smart-auth` are optional peer dependencies, needed only by the `./fhir-client` subpath; install them when you use the generated client
 * `fhirpath` is a peer dependency (required only if you use the generated validators/classes)
 
 Install `fhirpath` in your app if you plan to call `.validate()` or use the generated classes:

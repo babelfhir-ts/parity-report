@@ -49,7 +49,13 @@ babelfhir-ts --package hl7.fhir.us.core@8.0.0 --no-client
 
 ## Base Client Package
 
-The version-matched base client package (e.g., [`@babelfhir-ts/client-r4`](https://www.npmjs.com/package/@babelfhir-ts/client-r4)) is automatically included as a dependency of every generated package. It provides:
+The version-matched base client package (e.g., [`@babelfhir-ts/client-r4`](https://www.npmjs.com/package/@babelfhir-ts/client-r4)) and `@babelfhir-ts/smart-auth` are optional peer dependencies of every generated package: only the `./fhir-client` subpath imports them, so an app that uses the types, validators and value sets installs neither. To use the client, install both:
+
+```bash
+npm install @babelfhir-ts/client-r4 @babelfhir-ts/smart-auth
+```
+
+The base client provides:
 
 * CRUD operations for all R4 resource types
 * Search with type-safe parameters
