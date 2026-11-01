@@ -401,6 +401,8 @@ For each profile in an Implementation Guide, BabelFHIR-TS generates:
 | `<Profile>Class.ts` | Helper class with `empty()`, `random()`, and `validate()` methods |
 | `<Profile>Validator.ts` | Standalone validator function with FHIRPath constraint evaluation |
 | `valuesets/` | ValueSet modules with typed code unions, random pickers, and registry (see [ValueSets](./valuesets)) |
+| `namingsystems/` | One module per NamingSystem the IG declares: its identifier system as a constant, plus a registry |
+| `extensions/` | One module per extension the IG defines: its canonical URL as a constant with no imports, plus a registry |
 | `fhir-client/` | Type-safe FHIR client with profile-specific methods (see [FHIR Client](./fhir-client)) |
 | `dicomweb/` | DICOMweb helpers typed to ImagingStudy profiles (when `--dicomweb` is used, see [DICOMweb](./dicomweb)) |
 | `<Profile>.zod.ts` | Zod schema (when `--schema zod` is used, see [Schema Generation](./schema-generation)) |
@@ -451,6 +453,8 @@ Generated packages use Node.js [subpath exports](https://nodejs.org/api/packages
 | `"."` | Main entry — all interfaces, classes, and validators |
 | `"./fhir-client"` | Type-safe FHIR client (when client generation is enabled) |
 | `"./valuesets/*"` | Individual ValueSet modules (when ValueSets are resolved) |
+| `"./namingsystems/*"` | Individual NamingSystem modules (when the IG declares any) |
+| `"./extensions/*"` | Individual extension URL modules (when the IG defines extensions). Import these in a browser app: the profile class carries the URL too, but brings the validator and FHIRPath with it |
 | `"./dicomweb"` | DICOMweb helpers (when `--dicomweb` is used) |
 | `"./dicomweb/cornerstone"` | Cornerstone3D integration (when `--dicomweb` is used) |
 
@@ -463,6 +467,9 @@ import { FhirClient } from "hl7.fhir.us.core-generated/fhir-client";
 
 // Individual ValueSet
 import { AdministrativeGenderCode } from "hl7.fhir.us.core-generated/valuesets/ValueSet-AdministrativeGender";
+
+// An extension's URL, with nothing else attached
+import { USCoreRaceExtensionUrl } from "hl7.fhir.us.core-generated/extensions/Extension-USCoreRaceExtension";
 ```
 
 ## Package Metadata
