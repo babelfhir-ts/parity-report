@@ -98,6 +98,9 @@ When your project depends on multiple generated IG packages (e.g., Da Vinci PAS 
    });
    const qr = await client.read().forType<DTRQuestionnaireResponse>("QuestionnaireResponse").read("456");
 
+   // searchAll follows next links across every page; searchPage returns one page sized by _count
+   const recent = await client.read().forType<PASClaim>("Claim").searchPage({ _count: 20 });
+
    // Write operations work the same way
    await client.write().forType<PASClaim>("Claim").create(myClaim);
    ```
