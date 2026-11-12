@@ -1,0 +1,98 @@
+name: Deploy site
+
+on:
+  push:
+    branches: [main]
+  repository_dispatch:
+    types: [site-part-published]
+  workflow_dispatch:
+    inputs:
+      seed_ref:
+        description: Commit whose tree supplies any part still missing from the site release
+        required: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  SITE_RELEASE: site
+  SITE_PARTS: |
+    report .
+    docs docs
+    internal internal
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Seed parts missing from the site release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SEED_REF: ${{ inputs.seed_ref || github.event.before }}
+        run: |
+          gh release view "$SITE_RELEASE" >/dev/null 2>&1 || NEW_RELEASE=1
+          PRESENT=$(gh release view "$SITE_RELEASE" --json assets --jq '.assets[].name' 2>/dev/null || true)
+          MOUNTS=$(awk '$2 != "." { print $2 }' <<< "$SITE_PARTS")
+          SEED_DIR=$(mktemp -d)
+          while read -r PART MOUNT; do
+            [ -n "$PART" ] || continue
+            grep -qx "$PART.tar.gz" <<< "$PRESENT" && continue
+            if [ -z "$SEED_REF" ] || [ "$SEED_REF" = "0000000000000000000000000000000000000000" ]; then
+              echo "::error::the site release has no $PART part and no commit was given to seed it from"
+              exit 1
+            fi
+            git cat-file -e "$SEED_REF^{commit}" 2>/dev/null || git fetch --depth=1 origin "$SEED_REF"
+            if [ "$MOUNT" = "." ]; then
+              EXCLUDES=(":(exclude).github")
+              for M in $MOUNTS; do EXCLUDES+=(":(exclude)$M"); done
+              git archive --format=tar.gz -o "$SEED_DIR/$PART.tar.gz" "$SEED_REF" -- . "${EXCLUDES[@]}"
+            else
+              git archive --format=tar.gz -o "$SEED_DIR/$PART.tar.gz" "$SEED_REF" -- "$MOUNT"
+            fi
+            echo "Seeded the $PART part from $SEED_REF" >> "$GITHUB_STEP_SUMMARY"
+          done <<< "$SITE_PARTS"
+          [ -n "$(ls -A "$SEED_DIR")" ] || exit 0
+          if [ -n "${NEW_RELEASE:-}" ]; then
+            gh release create "$SITE_RELEASE" --prerelease --latest=false --title "Site" \
+              --notes "Rendered parts of the published site. Each asset is replaced when its part is published." \
+              || gh release view "$SITE_RELEASE" >/dev/null
+          fi
+          gh release upload "$SITE_RELEASE" "$SEED_DIR"/*.tar.gz
+
+      - name: Assemble the site
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          PARTS_DIR=$(mktemp -d)
+          gh release download "$SITE_RELEASE" --pattern '*.tar.gz' --dir "$PARTS_DIR"
+          mkdir _site
+          while read -r PART MOUNT; do
+            [ -n "$PART" ] || continue
+            tar -xzf "$PARTS_DIR/$PART.tar.gz" -C _site
+            test -f "_site/$MOUNT/index.html" || { echo "::error::the $PART part has no index.html at /$MOUNT"; exit 1; }
+          done <<< "$SITE_PARTS"
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
