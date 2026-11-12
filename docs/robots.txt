@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://babelfhir-ts.github.io/parity-report/docs/sitemap.xml
